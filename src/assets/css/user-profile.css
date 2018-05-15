@@ -1,0 +1,167 @@
+
+#user-profile{
+    background-color: rgb(231, 231, 231);
+    margin: 15vh auto;
+    width: 80vw;
+    padding: 5vw;
+    box-shadow: 1px 1px 2px #0000007a, -1px -1px 2px #00000075;
+    border-radius: 10px;
+}
+/*End of profile header*/
+#user-profile .profile-header{
+    display: flex;
+    align-items: flex-start;
+}
+#user-profile .profile-header .profile-pic{
+    flex: 2;
+    background-color: rgb(79, 166, 228);
+    padding-top: 1vw;
+    border: 2px solid #ffffff;
+}
+#user-profile .profile-header .profile-pic img{
+    width: 100%;
+}
+#user-profile .profile-header .basic-profile-info-form{
+    display: none;
+    flex: 3;
+    padding: 0 5vw;
+}
+#user-profile .profile-header .basic-profile-info{
+    flex: 3;
+    padding: 0 5vw;
+}
+#user-profile .profile-header .basic-profile-info h1{
+    display: flex;
+    justify-content: space-between;
+}
+#user-profile .profile-header button{
+    margin: 20px 0;
+}
+#user-profile .profile-header .basic-profile-info .review i{
+    color: rgb(255, 196, 0);
+}
+#user-profile .profile-header .basic-profile-info .review span{
+    font-weight: bolder;
+}
+/*End of profile header*/
+
+/* start of profile body */
+#user-profile .profile-body{
+    display: flex;
+}
+#user-profile .profile-body .profile-education{
+    flex:2;
+}
+
+#user-profile .profile-body .profile-education> div{
+    padding: 10px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 5px;
+    margin: 20px 0;
+}
+#user-profile .profile-body .profile-education .experience .exp-item p:first-of-type{
+    width: 100%
+}
+#user-profile .profile-body .experience{
+    flex: 3;
+    padding: 0 5vw;
+}
+#user-profile .profile-body .experience h2{
+    display: flex;
+    justify-content: space-between;
+}
+#user-profile .profile-body .profile-education p{
+    margin: 10px 0;
+}
+#user-profile .profile-body .profile-education p span{
+    margin: 0 5px;
+}
+#user-profile .profile-body .profile-education form{
+    display: none;
+}
+#user-profile .profile-body .profile-education .profile-education-header{
+    background-color: rgb(241, 241, 241);
+    position: relative;
+}
+#user-profile .profile-body .profile-education .profile-education-header .fa-pencil-square{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 32px; 
+}
+#user-profile .profile-body .experience h3{
+    margin: 0;
+}
+
+#user-profile .profile-body .experience .exp-item{
+    border-left: 1px solid #0088cc;
+    position: relative;
+    padding-left: 2vw;
+    padding-bottom: 30px;
+}
+#user-profile .profile-body .experience .exp-item i{
+    font-size: 16px;
+    display: none;
+}
+#user-profile .profile-body .experience .exp-item i:hover{
+    cursor: pointer;
+}
+#user-profile .profile-body .experience .exp-item h3:hover  i{
+    display: inline-block;
+}
+#user-profile .profile-body .experience .exp-item > span{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    background-color: rgb(0, 136, 204);
+    border-radius: 50%;
+    transform: translate(-60%);
+}
+#user-profile .profile-body .experience .exp-item h3{
+    padding-bottom: 20px;
+}
+#user-profile .profile-body .experience .exp-item h4{
+    color: rgb(0, 136, 204) !important;
+}
+#user-profile .profile-body .experience .exp-item p:first-of-type {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+#user-profile .profile-body .experience .exp-item p span{
+    background-color: rgb(0, 136, 204);
+    color: #fff;
+    padding: 0 5px;
+}
+#user-profile> .modal form .duration{
+    display: flex;
+    justify-content: space-around;
+}
+#user-profile> .modal form .duration input{
+    width:30%
+}
+
+/* End of profile body */
+@media all and (max-width: 768px){
+    #user-profile{
+        width: 95vw;
+    }
+    #user-profile .profile-header{
+        flex-direction: column
+    }
+    #user-profile .profile-header .basic-profile-info{
+        flex: 1;
+    }
+    #user-profile .profile-body{
+        flex-direction: column;
+    }
+    #user-profile .profile-body .profile-experience{
+        flex: 1;
+    }
+    #user-profile .profile-body .profile-education {
+       padding: 0 5vw;
+    }
+}

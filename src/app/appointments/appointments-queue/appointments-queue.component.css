@@ -1,0 +1,111 @@
+/* #appointment-queue {
+    position: fixed;
+    width: 33.33vw;
+    right: 0;
+    top: 10vh;
+    height: 90vh;
+    overflow-y: scroll;
+    padding: 20px;
+    background-color: #133640;
+    box-shadow: -5px #133640;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#appointment-queue::-webkit-scrollbar {
+    width: 0px;
+    background-color: #F5F5F5;
+}
+
+.appointment-wrapper {
+    position: relative;
+}
+
+.appointment-card {
+    background: linear-gradient(to bottom right, #1E6DB1, #37d6c0);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #eee;
+    width: 100%;
+    display: flex;
+    transition: none;
+}
+
+.appointment-card:hover {
+    cursor: pointer;
+}
+
+.appointment-card p {
+    margin-bottom: 5px;
+}
+
+.appointment-card span {
+    margin-left: 25px;
+}
+
+.appointment-card .patient-info {
+    flex: 4;
+}
+
+.appointment-card .patient-info p span {
+    font-family: "raleway";
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.appointment-card .patient-info p.patient-name {
+    font-family: "Helvetica";
+    font-weight: bolder;
+    font-size: 12px;
+    background-color: #133640;
+    padding: 0px 3px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+}
+
+.appointment-card .appointment-info {
+    padding: 0px 10px;
+    flex: 6;
+}
+
+.appointment-card .appointment-info>p {
+    display: flex;
+}
+
+.appointment-card .patient-info>p {
+    display: flex;
+}
+
+.appointment-card .appointment-info p.doctor {
+    font-family: "Helvetica";
+}
+
+.appointment-card .appointment-info i {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.appointment-card .queue-control {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+}
+
+.appointment-card .queue-control i, .appointment-card .queue-control span {
+    margin: 0;
+    font-size: 18px
+}
+
+@media screen and (max-width: 768px) {
+    #appointment-queue {
+        position: static;
+        width: 100vw;
+        margin-top: 10vh;
+    }
+} */

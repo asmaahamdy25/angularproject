@@ -1,13 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AppointmetsQueueComponent } from './appointmets-queue/appointmets-queue.component';
-import { ComponentCardComponent } from './appointmets-queue/component-card/component-card.component';
+import { AppointmentsQueueComponent } from './appointments-queue/appointments-queue.component';
 import { AppointmentBookingFormComponent } from './appointment-booking-form/appointment-booking-form.component';
+import { AppointmentCardComponent } from './appointments-queue/appointment-card/appointment-card.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [AppointmetsQueueComponent, ComponentCardComponent, AppointmentBookingFormComponent]
+  declarations: [
+    AppointmentsQueueComponent,
+    AppointmentBookingFormComponent,
+    AppointmentCardComponent
+],
+  exports: [
+    AppointmentsQueueComponent
+  ],
 })
 export class AppointmentModule { }
