@@ -19,12 +19,30 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "assets/css/custom.css",
+        "assets/css/theme-elements.css",
+        "assets/css/theme.css",
         "assets/css/app.css",
+<<<<<<< HEAD
         "assets/css/theme.css",
         "assets/css/default.css",
         "styles.css"
+=======
+        "styles.css",
+        "assets/css/bootstrap.min.css",
+        "assets/css/font-awesome.min.css",
+        "assets/css/simple-line-icons.min.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "assets/js/custom.js",
+        "assets/js/jquery.autocomplete.min.js",
+        "assets/js/theme.init.js",
+        "assets/js/theme.js",
+        "assets/js/view.contact.js",
+        "assets/js/view.home.js",
+        "assets/js/assets/js/view.home.js"
+>>>>>>> 5b86d01665e592bec251caf62e895e878b82ac54
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
