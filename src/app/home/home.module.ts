@@ -6,6 +6,9 @@ import { MyhomeComponent } from './myhome/myhome.component';
   imports: [
     CommonModule
   ],
+<<<<<<< HEAD
   declarations: [MyhomeComponent]
+=======
+>>>>>>> 75bc90613a0cdffbe02e90c65e072d5d0680638e
 })
 export class HomeModule { }

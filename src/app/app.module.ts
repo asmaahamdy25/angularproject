@@ -1,11 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router'
+import { RouterModule} from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { PatientProfileComponent } from './profiles/patient-profile/patient-profile.component';
+import { ProfileModule } from './profiles/profile.module';
 import { TreatmentModule } from './treatments/treatment.module';
 import { AppointmentModule } from './appointments/appointment.module';
-import { ProfileModule } from './profiles/profile.module';
 import { HomeModule } from './home/home.module';
 import { FacilityModule } from './facilities/facility.module';
 import {CoreModule} from './core/core.module';
@@ -20,6 +21,10 @@ import { MyhomeComponent } from './home/myhome/myhome.component';
 
 
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 5b86d01665e592bec251caf62e895e878b82ac54
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +33,17 @@ import { MyhomeComponent } from './home/myhome/myhome.component';
     
   ],
   imports: [
+<<<<<<< HEAD
+  BrowserModule,
+  ProfileModule,
+  RouterModule.forRoot([
+    {path: 'patien-profile',
+     component: PatientProfileComponent},
+     { path: 'treatment', component: TreatmentComponent }
+
+  ])
+,
+=======
     RouterModule.forRoot([
       { path: 'treatment', component: TreatmentComponent },
       { path: 'login', component: LoginComponent },
@@ -37,9 +53,9 @@ import { MyhomeComponent } from './home/myhome/myhome.component';
 
     ]),
     BrowserModule,
+>>>>>>> 5b86d01665e592bec251caf62e895e878b82ac54
     TreatmentModule,
     AppointmentModule,
-    ProfileModule,
     HomeModule,
     FacilityModule,
     CoreModule
