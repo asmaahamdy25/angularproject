@@ -5,11 +5,12 @@ import { ProfileComponent } from './patient-profile/profile/profile.component';
 import { InvoicesComponent } from './patient-profile/invoices/invoices.component';
 import { ReferralComponent } from './patient-profile/referral/referral.component';
 import { XRayComponent } from './patient-profile/x-ray/x-ray.component';
+import { DoctorCardComponent } from './patient-profile/doctor-card/doctor-card.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [PatientProfileComponent, ProfileComponent, InvoicesComponent, ReferralComponent, XRayComponent]
+  declarations: [PatientProfileComponent, ProfileComponent, InvoicesComponent, ReferralComponent, XRayComponent, DoctorCardComponent]
 })
 export class ProfileModule { }

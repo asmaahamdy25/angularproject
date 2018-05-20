@@ -19,6 +19,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "assets/css/app.css",
+        "assets/css/patient-profile.css",
         "styles.css"
       ],
       "scripts": [],
