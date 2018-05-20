@@ -19,23 +19,26 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "assets/css/custom.css",
-        "assets/css/theme-elements.css",
-        "assets/css/theme.css",
-        "assets/css/app.css",
-        "styles.css",
-        "assets/css/bootstrap.min.css",
-        "assets/css/font-awesome.min.css",
-        "assets/css/simple-line-icons.min.css"
+        "src/assets/css/bootstrap.css",
+        "src/assets/css/font-awesome.css",
+        "src/assets/css/simple-line-icons.css",
+
+        "src/assets/css/custom.css",
+        "src/assets/css/theme-elements.css",
+        "src/assets/css/theme.css",
+        "src/assets/css/app.css",
+        "src/styles.css"
+      
+        
       ],
       "scripts": [
-        "assets/js/custom.js",
-        "assets/js/jquery.autocomplete.min.js",
-        "assets/js/theme.init.js",
-        "assets/js/theme.js",
-        "assets/js/view.contact.js",
-        "assets/js/view.home.js",
-        "assets/js/assets/js/view.home.js"
+        "src/assets/js/custom.js",
+        "src/assets/js/jquery.autocomplete.min.js",
+        "src/assets/js/theme.init.js",
+        "src/assets/js/theme.js",
+        "src/assets/js/view.contact.js",
+        "src/assets/js/view.home.js",
+        "src/assets/js/bootstrap.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

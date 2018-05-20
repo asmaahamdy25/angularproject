@@ -16,6 +16,7 @@ import{SignupComponent} from './core/signup/signup.component';
 
 
 import { TreatmentComponent } from './treatments/treatment/treatment.component';
+import { MyhomeComponent } from './home/myhome/myhome.component';
 
 
 
@@ -30,7 +31,8 @@ import { TreatmentComponent } from './treatments/treatment/treatment.component';
     RouterModule.forRoot([
       { path: 'treatment', component: TreatmentComponent },
       { path: 'login', component: LoginComponent },
-      { path: 'signup', component: SignupComponent }
+      { path: 'signup', component: SignupComponent },
+      { path: 'home', component: MyhomeComponent }
 
 
     ]),
