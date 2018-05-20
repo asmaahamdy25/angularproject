@@ -8,17 +8,31 @@ import { AppointmentModule } from './appointments/appointment.module';
 import { ProfileModule } from './profiles/profile.module';
 import { HomeModule } from './home/home.module';
 import { FacilityModule } from './facilities/facility.module';
+import {CoreModule} from './core/core.module';
+import{LoginComponent} from './core/login/login.component';
+import{SignupComponent} from './core/signup/signup.component';
+
+
+
 
 import { TreatmentComponent } from './treatments/treatment/treatment.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
+  
+   
+    
   ],
   imports: [
     RouterModule.forRoot([
-      { path: 'treatment', component: TreatmentComponent }
+      { path: 'treatment', component: TreatmentComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'signup', component: SignupComponent }
+
+
     ]),
     BrowserModule,
     TreatmentModule,
@@ -26,6 +40,8 @@ import { TreatmentComponent } from './treatments/treatment/treatment.component';
     ProfileModule,
     HomeModule,
     FacilityModule,
+    CoreModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
