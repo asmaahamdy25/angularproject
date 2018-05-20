@@ -20,7 +20,8 @@
       "prefix": "app",
       "styles": [
         "assets/css/app.css",
-        "assets/css/patient-profile.css",
+        "assets/css/theme.css",
+        "assets/css/default.css",
         "styles.css"
       ],
       "scripts": [],
