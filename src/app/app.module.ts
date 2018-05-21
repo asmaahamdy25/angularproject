@@ -19,12 +19,6 @@ import{SignupComponent} from './core/signup/signup.component';
 import { TreatmentComponent } from './treatments/treatment/treatment.component';
 import { MyhomeComponent } from './home/myhome/myhome.component';
 
-
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 5b86d01665e592bec251caf62e895e878b82ac54
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,19 +26,20 @@ import { MyhomeComponent } from './home/myhome/myhome.component';
    
     
   ],
-  imports: [
-<<<<<<< HEAD
-  BrowserModule,
-  ProfileModule,
-  RouterModule.forRoot([
-    {path: 'patien-profile',
-     component: PatientProfileComponent},
-     { path: 'treatment', component: TreatmentComponent }
 
-  ])
+  imports: [
+ 
+  ProfileModule,
+  BrowserModule,
+    TreatmentModule,
+    AppointmentModule,
+    HomeModule,
+    FacilityModule,
+    CoreModule
+ 
 ,
-=======
     RouterModule.forRoot([
+      {path: 'patien-profile',component: PatientProfileComponent},
       { path: 'treatment', component: TreatmentComponent },
       { path: 'login', component: LoginComponent },
       { path: 'signup', component: SignupComponent },
@@ -52,16 +47,15 @@ import { MyhomeComponent } from './home/myhome/myhome.component';
 
 
     ]),
-    BrowserModule,
->>>>>>> 5b86d01665e592bec251caf62e895e878b82ac54
-    TreatmentModule,
-    AppointmentModule,
-    HomeModule,
-    FacilityModule,
-    CoreModule
+    
    
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
+
+
+
+
 export class AppModule { }
