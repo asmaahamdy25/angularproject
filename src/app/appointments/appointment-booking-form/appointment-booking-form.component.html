@@ -1,3 +1,65 @@
-<p>
-  appointment-booking-form works!
-</p>
+<div id="booking-form">
+  <h1>Book An Apponitment</h1>
+  <form id="booking" action="">
+    <div class="input-group">
+      <label>Patient Name</label>
+      <select id="patients" class="form-control">
+        <option>Ahmed Hani</option>
+        <option>Mohamed Abdelrhman</option>
+        <option>Alaa Ibrahim</option>
+        <option>Yasser Twfik</option>
+        <option>Sayed Hamdi</option>
+        <option>Sara Ahmed</option>
+        <option>Alaa Gamal</option>
+        <option>Gaser Mohamed</option>
+        <option>Adel Ali</option>
+        <option>Osama Mahmoud</option>
+      </select>
+
+    </div>
+    <div class="input-group">
+      <label>Dentist</label>
+      <select id="dentists" class="form-control">
+        <option>Dr.Dalia Hani</option>
+        <option>Dr.Abdelrhman Mohamed</option>
+        <option>Dr.Rawaa Alaa</option>
+        <option>Dr.Ahmed Yasser</option>
+        <option>Dr.Asmaa Hamdi</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label>Unit no. :</label>
+      <select id="units" class="form-control">
+        <option>#15</option>
+        <option>#78</option>
+        <option>#52</option>
+        <option>#88</option>
+        <option>#45</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label>Unit no. :</label>
+      <select id="facility" class="form-control">
+        <option>#7815</option>
+        <option>#8878</option>
+        <option>#1552</option>
+        <option>#4588</option>
+        <option>#5425</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label>Date :</label>
+      <input id="date" class="form-control" name="bday">
+    </div>
+
+    <div class="input-group">
+      <label class="">Time: (time slot reservation)</label>
+      <input class="form-control" id="time" name="bday">
+    </div>
+    <div class="form-actions input-group">
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="button" class="btn">Cancel</button>
+    </div>
+  </form>
+</div>

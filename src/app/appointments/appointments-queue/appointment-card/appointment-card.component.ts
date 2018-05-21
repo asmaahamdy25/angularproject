@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, Input } from '@angular/core';
+import { IAppointmentcard } from '../../../../../shared/models/classes/appointmentcard';
 
 @Component({
   selector: 'app-appointment-card',
@@ -7,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppointmentCardComponent implements OnInit {
 
-  constructor() { }
+   @Input() public appointmentCards: IAppointmentcard;
 
+  constructor() {
+  }
   ngOnInit() {
   }
 
