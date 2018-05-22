@@ -1,0 +1,20 @@
+*{
+    color: #777;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+label {
+    font-weight: normal;
+}
+h1{
+    font-size: 3.6rem;
+    font-weight: 200;
+    line-height: 1.1;
+    letter-spacing: -1px;
+  }
+  .btn-primary {
+    color: #ffffff;
+  }
+select{
+    color: rgba(0, 0, 0, 0.774);
+}

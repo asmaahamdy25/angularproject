@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-appointment-booking-form',
+  selector: 'app-appointmentbookingform',
   templateUrl: './appointment-booking-form.component.html',
   styleUrls: ['./appointment-booking-form.component.css']
 })
