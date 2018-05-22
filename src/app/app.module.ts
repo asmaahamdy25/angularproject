@@ -21,8 +21,6 @@ import { AppointmentComponent } from './appointments/apponitment';
 import { AppointmentBookingFormComponent } from './appointments/appointment-booking-form/appointment-booking-form.component';
 import { MyhomeComponent } from './home/myhome/myhome.component';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,20 +29,20 @@ import { MyhomeComponent } from './home/myhome/myhome.component';
 
 
   ],
+
   imports: [
 
-    BrowserModule,
     ProfileModule,
-    RouterModule.forRoot([
-      {
-        path: 'patien-profile',
-        component: PatientProfileComponent
-      },
-      { path: 'treatment', component: TreatmentComponent }
+    BrowserModule,
+    TreatmentModule,
+    AppointmentModule,
+    HomeModule,
+    FacilityModule,
+    CoreModule
 
-    ])
     ,
     RouterModule.forRoot([
+      { path: 'patien-profile', component: PatientProfileComponent },
       { path: 'treatment', component: TreatmentComponent },
       { path: 'appointment', component: AppointmentComponent },
       { path: 'login', component: LoginComponent },
@@ -63,4 +61,9 @@ import { MyhomeComponent } from './home/myhome/myhome.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+
+
+
+
+
 export class AppModule { }
