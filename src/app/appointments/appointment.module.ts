@@ -14,7 +14,8 @@ import { AppointmentCardComponent } from './appointments-queue/appointment-card/
     AppointmentCardComponent
 ],
   exports: [
-    AppointmentsQueueComponent
+    AppointmentsQueueComponent,
+    AppointmentBookingFormComponent
   ],
 })
 export class AppointmentModule { }

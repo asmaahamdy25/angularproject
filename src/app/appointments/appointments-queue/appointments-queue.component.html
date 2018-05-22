@@ -1,15 +1,7 @@
 <div id="appointment-queue">
   <div class="appointment-wrapper">
-    <app-appointment-card></app-appointment-card>
-    <app-appointment-card></app-appointment-card>
-    <app-appointment-card></app-appointment-card>
-    <app-appointment-card></app-appointment-card>
-    <app-appointment-card></app-appointment-card>
-    <app-appointment-card></app-appointment-card>
-    <app-appointment-card></app-appointment-card>
-    <app-appointment-card></app-appointment-card>
-    <app-appointment-card></app-appointment-card>
-    <app-appointment-card></app-appointment-card>
-    <app-appointment-card></app-appointment-card>
+    <app-appointment-card *ngFor="let appCard of appointmentCard"  [appointmentCards]="appCard"></app-appointment-card>
+
   </div>
 </div>
+
