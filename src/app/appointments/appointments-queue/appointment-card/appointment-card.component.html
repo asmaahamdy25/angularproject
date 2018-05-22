@@ -1,20 +1,20 @@
 <div class="appointment-card">
   <div class="patient-info ">
-    <p class="patient-name text-center"><a class="unstyled" href="patient-profile.html">Abdurrahman Mohamed</a></p>
+    <p class="patient-name text-center"><a class="unstyled" href="patient-profile.html">{{appointmentCards.patientName}}</a></p>
     <p>
       <i class="fa fa-hospital-o" aria-hidden="true"></i>
-      <span>#2032</span>
+      <span>{{appointmentCards.patientNum}}</span>
     </p>
-    <p>04:30 PM</p>
+    <p>{{appointmentCards.appointmentTime}}</p>
   </div>
   <div class="appointment-info ">
     <p class="doctor">
       <i class="fa fa-user-md" aria-hidden="true"></i>
-      <span>Dr. Dalia Hany</span>
+      <span>{{appointmentCards.DrName}}</span>
     </p>
     <p class="unit">
       <i class="fa fa-bed" aria-hidden="true"></i>
-      <span>#24</span>
+      <span>{{appointmentCards.num1}}</span>
     </p>
     <p class="controls">
       <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -24,7 +24,7 @@
   </div>
   <div class="queue-control">
     <i class="fa fa-arrow-up" aria-hidden="true"></i>
-    <span>0</span>
+    <span>{{appointmentCards.num2}}</span>
     <i class="fa fa-arrow-down" aria-hidden="true"></i>
   </div>
 </div>

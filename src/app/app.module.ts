@@ -17,11 +17,17 @@ import { SignupComponent } from './core/signup/signup.component';
 
 
 import { TreatmentComponent } from './treatments/treatment/treatment.component';
+import { AppointmentComponent } from './appointments/apponitment';
+import { AppointmentBookingFormComponent } from './appointments/appointment-booking-form/appointment-booking-form.component';
 import { MyhomeComponent } from './home/myhome/myhome.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+<<<<<<< HEAD
+=======
+    AppointmentComponent
+>>>>>>> f833cc6766767b326d25a701a0314e64d17833f9
 
 
 
@@ -41,6 +47,7 @@ import { MyhomeComponent } from './home/myhome/myhome.component';
     RouterModule.forRoot([
       { path: 'patien-profile', component: PatientProfileComponent },
       { path: 'treatment', component: TreatmentComponent },
+      { path: 'appointment', component: AppointmentComponent },
       { path: 'login', component: LoginComponent },
       { path: 'signup', component: SignupComponent },
       { path: 'home', component: MyhomeComponent }
