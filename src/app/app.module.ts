@@ -51,12 +51,8 @@ import { MyhomeComponent } from './home/myhome/myhome.component';
 
 
     ]),
-    BrowserModule,
-    TreatmentModule,
-    AppointmentModule,
-    HomeModule,
-    FacilityModule,
-    CoreModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
