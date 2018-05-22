@@ -24,10 +24,7 @@ import { MyhomeComponent } from './home/myhome/myhome.component';
 @NgModule({
   declarations: [
     AppComponent,
-<<<<<<< HEAD
-=======
     AppointmentComponent
->>>>>>> f833cc6766767b326d25a701a0314e64d17833f9
 
 
 
