@@ -1,0 +1,202 @@
+/* Add here all your CSS customizations */
+
+/* -----------------General----------------- */
+html .panel-info > .panel-heading {
+    background: #414c68;
+}
+
+a{
+    text-decoration: none !important;
+   
+}
+
+.lnk {
+    letter-spacing: 0;
+    transition: all 0.3s;
+}
+
+.lnk1:hover,
+.lnk1:active {
+    letter-spacing: 4px;
+    transition: all 0.3s;
+}
+
+/* ----------- Star Rating (Dynamic) ------------ */
+.mfp-wrap .mfp-container .mfp-content {
+    position: relative;
+    /* left: 0; */
+    top: -15%;
+}
+
+label{
+    font-size: 15px;
+}
+
+.rating-container .filled-stars{
+    color: #ffb347 !important;
+}
+
+.rating-container .rating-md{
+    font-size: 3em;
+}
+
+.rating-container .star {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.rating-container .caption {
+    margin-top: 1px;
+}
+
+/* -------------------- Star Rating Static -------------------- */
+
+.star-ratings-sprite {
+    display: inline-block;
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
+    font-size: 0;
+    height: 21px;
+    line-height: 0;
+    overflow: hidden;
+    text-indent: -999em;
+    width: 110px;
+    margin: 0 auto;
+}
+
+.star-ratings-sprite-rating {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
+    background-position: 0 100%;
+    float: left;
+    height: 21px;
+    display: block;
+}
+
+/* -------------------- DR Info Panel ------------------- */
+div.about-dr{
+    margin-top: 15px;
+}
+
+
+.social-icons-list a{    
+    position: relative;
+}
+
+.social-icons-list a i{
+    position: absolute;
+    font-size: 1.7rem;
+    top: 50%;
+    left: 50%;
+    transform: translate( -6px, -9px);
+}
+
+/* -------------------- Full Patient Reviews -------------------- */
+
+.full-patients-reviews .fpr-header .static-rates{
+    text-align: center;
+}
+.full-patients-reviews .fpr-header .static-rates >div{
+    text-align: right;
+}
+
+.full-patients-reviews .fpr-header span{
+    font-size: 65px;
+}
+
+/* -------------------- Reviews And Comments -------------------- */
+.dr-timeline .timeline .tm-body .tm-title a{
+    color: #0088cc;
+    /*#414c68*/
+    font-weight: bold;
+    
+}
+
+.dr-timeline .timeline .tm-body .title{
+    color: #414c68;
+}
+
+/* -------------------- Search Box -------------------- */
+
+div.search-box{
+    /*margin-top: 15px;*/
+    margin-top: 85px;
+}
+
+.search-box .pagin{
+    text-align: center;
+}
+
+
+.search-box h1{
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.search-box form{
+    margin: 0;
+    vertical-align: middle;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+.dropdown.dropdown-lg .dropdown-menu {
+    margin-top: -1px;
+    padding: 6px 20px;
+}
+.input-group-btn .btn-group {
+    display: flex !important;
+}
+.btn-group .btn {
+    border-radius: 0;
+    margin-left: -1px;
+}
+.btn-group .btn:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.btn-group .form-horizontal .btn[type="submit"] {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+.form-group .form-control:last-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    #adv-search {
+        width: 500px;
+        margin: 0 auto;
+    }
+    .dropdown.dropdown-lg {
+        position: static !important;
+    }
+    .dropdown.dropdown-lg .dropdown-menu {
+        min-width: 500px;
+    }
+}
+
+.widget-twitter-profile .top-image img {
+    height: 45px !important;
+}
+
+.patient-cards i {
+    margin-right:10px !important;
+}
+
+.search-box #accordion > div.panel-body {
+    padding:0 !important;
+}
+
+.search-box #accordion > div.panel-body .panel-heading  {
+    margin-top:10px!important;
+}
+
+.search-box #accordion > div.panel-body .panel-heading:nth-child(1) {
+    margin-top:0!important;
+}
