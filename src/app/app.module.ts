@@ -9,9 +9,9 @@ import { TreatmentModule } from './treatments/treatment.module';
 import { AppointmentModule } from './appointments/appointment.module';
 import { HomeModule } from './home/home.module';
 import { FacilityModule } from './facilities/facility.module';
-import { CoreModule } from './core/core.module';
-import { LoginComponent } from './core/login/login.component';
-import { SignupComponent } from './core/signup/signup.component';
+import {CoreModule} from './core/core.module';
+import {LoginComponent} from './core/login/login.component';
+import {SignupComponent} from './core/signup/signup.component';
 
 
 
@@ -20,10 +20,14 @@ import { TreatmentComponent } from './treatments/treatment/treatment.component';
 import { AppointmentComponent } from './appointments/apponitment';
 import { AppointmentBookingFormComponent } from './appointments/appointment-booking-form/appointment-booking-form.component';
 import { MyhomeComponent } from './home/myhome/myhome.component';
+import { DoctorSearchComponent } from './profiles/patient-profile/doctor-search/doctor-search.component';
+import { DoctorItemComponent } from './profiles/patient-profile/doctor-item/doctor-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    DoctorSearchComponent,
+    DoctorItemComponent,
     AppointmentComponent
 
 
