@@ -48,18 +48,10 @@ import { MyhomeComponent } from './home/myhome/myhome.component';
       { path: 'login', component: LoginComponent },
       { path: 'signup', component: SignupComponent },
       { path: 'home', component: MyhomeComponent }
-
-
     ]),
-
-
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-
-
-
-
 
 export class AppModule { }
