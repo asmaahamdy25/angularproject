@@ -18,7 +18,11 @@
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
+<<<<<<< HEAD
       "styles" : [
+=======
+      "styles": [
+>>>>>>> 459976631e7cf4c149343801486e8a278cc53f5a
         "assets/css/app.css",
         "assets/css/default.css",
         "styles.css"
