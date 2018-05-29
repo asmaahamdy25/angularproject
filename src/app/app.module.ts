@@ -63,8 +63,4 @@ import { appoinmentCardService } from './shared/models/Services/appointmentcard-
   bootstrap: [AppComponent]
 })
 
-
-
-
-
 export class AppModule { }
