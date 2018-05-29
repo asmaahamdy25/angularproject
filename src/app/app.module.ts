@@ -22,6 +22,7 @@ import { AppointmentBookingFormComponent } from './appointments/appointment-book
 import { MyhomeComponent } from './home/myhome/myhome.component';
 import { DoctorSearchComponent } from './profiles/patient-profile/doctor-search/doctor-search.component';
 import { DoctorItemComponent } from './profiles/patient-profile/doctor-item/doctor-item.component';
+import { PackagesComponent } from './facilities/packages/packages.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { DoctorItemComponent } from './profiles/patient-profile/doctor-item/doct
       { path: 'appointment', component: AppointmentComponent },
       { path: 'login', component: LoginComponent },
       { path: 'signup', component: SignupComponent },
-      { path: 'home', component: MyhomeComponent }
+      { path: 'home', component: MyhomeComponent },
+      { path: 'packages', component: PackagesComponent },
     ]),
   ],
   providers: [],
