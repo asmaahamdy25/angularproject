@@ -1,0 +1,497 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: rgb(84, 193, 240);
+}
+
+p {
+  margin-bottom: 0;
+}
+
+body {
+  background-color: #eee;
+  height: 5000px;
+}
+
+/** start of sidebar **/
+
+#menu-bar-icon {
+  position: fixed;
+  top: 2vh;
+  left: 2vw;
+  background-color: #fff;
+  z-index: 1023;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vw;
+  color: #133640;
+  border: 2px solid #133640
+}
+
+#sidebar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  background-color: #133640;
+  z-index: 1022;
+}
+
+#sidebar #menu-icons {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#sidebar #menu-icons a {
+  color: #aaa;
+}
+
+#sidebar #menu-icons .fa {
+  font-size: 28px;
+}
+
+#sidebar #menu-icons ul {
+  display: flex;
+  height: 500px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex: 2
+}
+
+#sidebar #menu-icons ul li {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  border-left: 3px solid #133640;
+  display: flex;
+}
+
+#sidebar #menu-icons ul li:hover {
+  border-left: 3px solid #0088cc
+}
+
+#sidebar #menu-icons ul li span {
+  padding: 0 1vw;
+  display: none;
+}
+
+#sidebar #menu-icons ul li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#sidebar #menu-icons ul li.active {
+  background-color: #0088cc;
+  border-left: 3px solid #0088cc
+}
+
+#sidebar #menu-icons ul li.active i {
+  color: #fff;
+}
+
+#sidebar #menu-icons ul:last-child {
+  font-size: 20px;
+  flex: 5
+}
+
+@media all and (max-width: 768px) {
+  #sidebar {
+    display: none;
+    height: 90vh;
+  }
+  #menu-bar-icon {
+    display: flex;
+  }
+}
+
+/**start user  nav bar**/
+
+#user-navbar {
+  background-color: #fff;
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+#user-navbar header.header {
+  width: 75%;
+  position: static;
+  margin: 0 auto;
+}
+
+/**End user  nav bar**/
+
+/** start of appointment queue **/
+
+#appointment-queue {
+  position: fixed;
+  width: 33.33vw;
+  right: 0;
+  top: 10vh;
+  height: 90vh;
+  overflow-y: scroll;
+  padding: 20px;
+  background-color: #133640;
+  box-shadow: -5px #133640;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.appointment-wrapper {
+  position: relative;
+}
+
+.appointment-card {
+  background: linear-gradient(to bottom right, #1E6DB1, #37d6c0);
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  color: #eee;
+  width: 100%;
+  display: flex;
+  transition: none;
+}
+
+.appointment-card:hover {
+  cursor: pointer;
+}
+
+.appointment-card p {
+  margin-bottom: 5px;
+}
+
+.appointment-card span {
+  margin-left: 25px;
+}
+
+.appointment-card .patient-info {
+  flex: 4;
+}
+
+.appointment-card .patient-info p span {
+  font-family: "raleway";
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.appointment-card .patient-info p.patient-name {
+  font-family: "Helvetica";
+  font-weight: bolder;
+  font-size: 12px;
+  background-color: #133640;
+  padding: 0px 3px;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+}
+
+.appointment-card .appointment-info {
+  padding: 0px 10px;
+  flex: 6;
+}
+
+.appointment-card .appointment-info>p {
+  display: flex;
+}
+
+.appointment-card .patient-info>p {
+  display: flex;
+}
+
+.appointment-card .appointment-info p.doctor {
+  font-family: "Helvetica";
+}
+
+.appointment-card .appointment-info i {
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.appointment-card .queue-control {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around
+}
+
+.appointment-card .queue-control i, .appointment-card .queue-control span {
+  margin: 0;
+  font-size: 18px
+}
+
+@media screen and (max-width: 768px) {
+  #appointment-queue {
+    position: static;
+    width: 100vw;
+    margin-top: 10vh;
+  }
+}
+
+/** End of appointment queue **/
+
+/*
+  Right To Left Configurations
+
+  .appointment-card .appointment-info i:hover {
+  color: #133640;
+  cursor: pointer;
+}
+
+.appointment-card:hover {
+  flex-direction: row-reverse;
+  cursor: pointer;
+}
+.appointment-card:hover .patient-info>p, .appointment-info>p {
+  flex-direction: row-reverse;
+}
+*/
+
+/* #sidebar #menu-icons ul li{
+  width: 100%;
+} */
+
+/**Start of Booking form*/
+
+#booking-form {
+  width: 61vw;
+  margin-left: 5vw;
+  margin-top: 10vh;
+  padding: 1vh 5vh
+}
+
+#booking-form #booking .input-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#booking-form #booking .input-group label {
+  flex: 1;
+  font-size: 16px;
+}
+
+#booking-form #booking .input-group .form-control {
+  flex: 2
+}
+
+#booking-form #booking button {
+  margin-right: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+  #booking-form {
+    width: 100vw;
+    margin-left: 0;
+    margin: 0auto;
+  }
+}
+
+/**End of Booking form*/
+
+/* Start of Teeth chart*/
+
+#teeth-chart {
+  width: 61vw;
+  margin-left: 5vw;
+  margin-top: 5vh;
+  height: 50vh;
+  background-color: rgb(0, 221, 255);
+  position: relative;
+}
+
+#teeth-chart .tooth>span {
+  background-image: url("../images/teeth/tooth-1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#teeth-chart .tooth {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 10vh;
+  width: 10vh;
+}
+
+#teeth-chart .diseases-list {
+  width: 80%;
+  text-align: center;
+  margin: 10px auto;
+  color: white;
+}
+
+#teeth-chart .diseases {}
+
+#teeth-chart .diseases-list span {
+  margin: 20px;
+  background-color: rgb(214, 1, 186);
+  padding: 5px;
+  border-radius: 3px;
+  transition: none;
+  cursor: -webkit-grabbing;
+}
+
+#teeth-chart .tooth .tooth-diseases {
+  display: block;
+  background-color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  display: none;
+  padding: 20px;
+}
+
+#teeth-chart .tooth:hover .tooth-diseases {
+  display: block !important;
+}
+
+#teeth-chart .tooth .tooth-diseases span {
+  display: block;
+  background-color: #133640;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* End of Teeth chart*/
+
+/* Dentist Componnet */
+
+.dentist-card {
+  background: linear-gradient(#1E6DB1, #37d6c0);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dentist-card .img {
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #eee;
+  margin-bottom: 20px;
+  border: 2px solid #fff;
+}
+
+.dentist-card .img img {
+  width: 100%;
+}
+
+.dentist-card .img img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.dentist-card .dentist-info {
+  color: #133640;
+  text-align: center;
+}
+
+.dentist-card .dentist-info p:first-child {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.dentist-card .dentist-review p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.dentist-card .dentist-review p>span i {
+  color: #e9b900;
+  font-size: 12px;
+}
+
+.dentist-card .dentist-review button {
+  margin: 20px auto;
+  border: none;
+  padding: 10px;
+  word-wrap: break-word;
+  border-radius: 5px;
+  color: #fff;
+  white-space: normal;
+  display: block;
+}
+
+.dentist-card .dentist-review button i {
+  color: #eee;
+}
+
+@media only screen and (max-width: 690px) {
+  .dentist-card {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    padding: 10px 0px 0px 10;
+  }
+  .dentist-card .dentist-info {
+    flex: 2;
+    width: 50%;
+  }
+  .dentist-card .dentist-review {
+    display: flex;
+    align-items: space-between;
+    width: 100%;
+  }
+  .dentist-card .dentist-review button {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+  }
+  .dentist-card .dentist-review button i {
+    align-self: center;
+  }
+  .dentist-card .dentist-review p {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  .dentist-card .img {
+    margin: 0;
+    width: 50%;
+    flex: 1;
+    align-self: flex-start;
+  }
+}
