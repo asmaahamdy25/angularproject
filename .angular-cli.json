@@ -9,7 +9,7 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "favicon.png"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -19,17 +19,30 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "assets/css/bootstrap.css",
+        
+        
+        "assets/css/user-profile.css",
+        
+        
         "assets/css/app.css",
-        "assets/css/default.css",
-        "styles.css"
-
+     
+        "assets/css/edit.css",
+        
+        
+        "styles.css",
+        
+        "../node_modules/fullcalendar/dist/fullcalendar.min.css",
+        "../node_modules/fullcalendar-scheduler/dist/scheduler.min.css"
       ],
       "scripts": [
 
+        "assets/js/bootstrap.min.js",
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/moment/min/moment.min.js",
+        "../node_modules/fullcalendar/dist/fullcalendar.min.js",
+        "../node_modules/fullcalendar-scheduler/dist/scheduler.min.js"
       ],
-
-
-
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

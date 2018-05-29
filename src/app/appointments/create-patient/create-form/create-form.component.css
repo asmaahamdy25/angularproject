@@ -1,0 +1,30 @@
+#booking {
+    width: 61vw;
+    margin-left: 5vw;
+    margin-top: 10vh;
+    padding: 1vh 5vh;
+}
+
+#booking {
+    width: 650px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+ #booking .input-group .form-control {
+    height: 40px;
+}
+
+ #booking .input-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+#booking .input-group .form-control {
+    height: 40px;
+}
+ #booking .input-group .form-control {
+    flex: 2;
+}
+#booking{
+width: 650px;
+margin: 50px;}
