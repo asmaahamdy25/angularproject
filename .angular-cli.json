@@ -21,16 +21,7 @@
       "styles": [
         "assets/css/app.css",
         "assets/css/default.css",
-        "assets/css/bootstrap.css",
-        "assets/css/custom.css",
-        "assets/css/font-awesome.css",
-        "assets/css/patient-profile.css",
-        "assets/css/simple-line-icons.css",
-        "assets/css/theme-elements.css",
-        "assets/css/theme.css",
-        "assets/css/user-profile.css",
         "styles.css"
-
       ],
       "scripts": [
 

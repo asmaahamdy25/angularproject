@@ -1,0 +1,68 @@
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.col-md-4 {
+    width: 33.33333333%;
+}
+.dentist-card {
+    background: linear-gradient(#1E6DB1, #37d6c0);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 0px 0px 10;
+}
+.dentist-card .img {
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #eee;
+    border: 2px solid #fff;
+    margin: 0;
+    width: 50%;
+    flex: 1;
+    align-self: flex-start;
+}
+.dentist-card .img img {
+    width: 100%;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+.dentist-card .dentist-info {
+    color: #133640;
+    text-align: center;
+    flex: 2;
+    width: 50%;
+}
+.dentist-card .dentist-info p:first-child {
+    font-weight: bolder;
+    font-size: 20px;
+}
+p {
+    margin-bottom: 0;
+}
+p {
+    margin: 0 0 10px;
+}
+body a, body a:focus, body a:hover, body a:active, body a:visited {
+    outline: none !important;
+}
+a {
+    text-decoration: none !important;
+}
+a {
+    color: #cccccc;
+}
+a {
+    color: #428bca;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
