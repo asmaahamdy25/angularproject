@@ -1,0 +1,35 @@
+<div  class="appointment-card" >
+    <div class="patient-info ">
+        <p class="patient-name text-center">{{appointmentcard.patientName}}</p>
+        <p>
+            <i class="fa fa-hospital-o" aria-hidden="true"></i>
+            <span>#{{appointmentcard.facilityNum}}</span>
+        </p>
+        <p>{{appointmentcard.appointmentTime}}</p>
+    </div>
+    <div class="appointment-info ">
+        <p class="doctor">
+            <i class="fa fa-user-md" aria-hidden="true"></i>
+            <span>Dr.{{ appointmentcard.DrName}}</span>
+        </p>
+        <p class="unit">
+            <i class="fa fa-bed" aria-hidden="true"></i>
+            <span>#{{appointmentcard.roomNum}}</span>
+        </p>
+        <p class="controls">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <i class="fa fa-trash-o" aria-hidden="true"></i>
+            <a href="#warningModal" data-toggle="modal">
+                <i class="fa fa-pencil-square-o" aria-hidden="true" onclick="edit(event)">
+
+
+                </i>
+            </a>
+        </p>
+    </div>
+    <div class="queue-control">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        <span>0</span>
+        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+    </div>
+</div>
