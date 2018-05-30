@@ -58,7 +58,8 @@ import { FormsModule } from '@angular/forms';
       ,
       {
         path:'calender', component:DemoComponent
-      }
+      },
+      {path:'signup',component:SignupComponent}
     ]),
     AppointmentModule
 
