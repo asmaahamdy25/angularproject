@@ -48,24 +48,17 @@ import { DemoModule } from './Demo/module';
     AngularFontAwesomeModule,
     CoreModule ,
     sharedModule ,
-<<<<<<< HEAD
-=======
-    NgbModule.forRoot(),
-    CalendarModule.forRoot()
-   
   ,
   DemoModule,
-       
-    
+
     RouterModule.forRoot([
       {
-        path:'', component:HomeComponent}
+        path: '', component: HomeComponent}
       ,
       {
-        path:'calender', component:DemoComponent
+        path: 'calender', component: DemoComponent
       }
     ]),
->>>>>>> 440b7016eba4624ae25d0a9fbd2603c8e6ba2c56
     AppointmentModule
   ],
   providers: [AppoinmentCardService],
