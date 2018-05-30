@@ -13,7 +13,7 @@ import {CoreModule} from './core/core.module';
 import { TreatmentComponent } from './treatments/treatment/treatment.component';
 import { PatientAppointmentQueueComponent } from './appointments/patient-appointment-queue/patient-appointment-queue';
 // import {LoginComponent} from './core/login/login.component';
-// import {SignupComponent} from './core/signup/signup.component';
+ import {SignupComponent} from './core/signup/signup.component';
 
 
 //  import{appoinmentCardService} from '../shared/models/Services/appointmentcard-service'
@@ -32,7 +32,11 @@ import { DemoModule } from './Demo/module';
 import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
+<<<<<<< HEAD
     AppComponent  
+=======
+    AppComponent
+>>>>>>> a175a68332b2e8c0b3cd4140f037b6cb348e7ddd
     ],
 
   imports: [
@@ -61,8 +65,7 @@ import { FormsModule } from '@angular/forms';
       }
     ]),
     AppointmentModule
-    
-    
+
 
   ],
   providers: [appoinmentCardService],
