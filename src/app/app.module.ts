@@ -13,7 +13,7 @@ import {CoreModule} from './core/core.module';
 import { TreatmentComponent } from './treatments/treatment/treatment.component';
 import { PatientAppointmentQueueComponent } from './appointments/patient-appointment-queue/patient-appointment-queue';
 // import {LoginComponent} from './core/login/login.component';
-// import {SignupComponent} from './core/signup/signup.component';
+ import {SignupComponent} from './core/signup/signup.component';
 
 
 //  import{appoinmentCardService} from '../shared/models/Services/appointmentcard-service'
@@ -41,9 +41,8 @@ import { appoinmentCardService } from './shared/models/Services/appointmentcard-
     sharedModule
     ,
     RouterModule.forRoot([
-      {
-        path:'', component:HomeComponent
-      }
+      { path: 'signup', component: SignupComponent }
+
     ]),
     // RouterModule.forRoot([
     //   { path: 'patient-profile', component: PatientProfileComponent },
