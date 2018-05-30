@@ -1,0 +1,33 @@
+*{
+    color: #777;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+label {
+    font-weight: normal;
+}
+h1{
+    font-size: 3.6rem;
+    font-weight: 200;
+    line-height: 1.1;
+    letter-spacing: -1px;
+  }
+  .btn-primary {
+    color: #ffffff;
+     border-color: none; 
+  }
+select{
+    color: rgba(0, 0, 0, 0.774);
+}
+#booking-form {
+    width: 61vw;
+    margin-left: 5vw;
+    margin-top: 10vh;
+    padding: 1vh 5vh;
+}
+#booking-form #booking .input-group .form-control {
+    height: 40px;
+}
+#booking-form #booking .input-group .form-control {
+    flex: 2;
+}

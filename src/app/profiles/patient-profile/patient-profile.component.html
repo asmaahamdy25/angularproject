@@ -1,0 +1,283 @@
+<div class="container">
+<div class="row">
+  <div class="col-md-7">
+  <app-profile></app-profile>
+  </div>
+  <div class="col-md-5" >
+  <app-doctor-card></app-doctor-card>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <app-invoices></app-invoices>
+  </div>
+</div>
+<div class="row"> -->
+    <div class="col-md-12">
+    <app-referral></app-referral>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-md-12">
+        <app-x-ray></app-x-ray>>
+      </div>
+    </div>
+  </div> 
+
+  
+		<!-- end: header -->
+
+	<!-- Don't Delete the above
+	<div id="user-profile">
+		<div class="modal fade" id="adding-exp" tabindex="-1" role="dialog" aria-labelledby="adding-expLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h2 class="modal-title" id="adding-expLabel">Add an Experience</h2>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form data-mode="">
+							<div class="form-group">
+								<span class="input-group-text">Title</span>
+								<input type="text" class="form-control" aria-describedby="inputGroup-sizing-sm">
+							</div>
+							<div class="form-group duration">
+								<span class="input-group-text">From</span>
+								<input type="date" class="form-control" aria-describedby="inputGroup-sizing-sm">
+								<span class="input-group-text">To</span>
+								<input type="date" class="form-control" aria-describedby="inputGroup-sizing-sm">
+							</div>
+							<div class="form-group">
+								<span class="input-group-text">PlaceType</span>
+								<input type="text" class="form-control" aria-describedby="inputGroup-sizing-sm">
+							</div>
+							<div class="form-group">
+								<span class="input-group-text">Description</span>
+								<textarea type="text" class="form-control" aria-describedby="inputGroup-sizing-sm"></textarea>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="profile-header">
+			<div class="profile-pic">
+				<img src="assets\images\doctors\doctor_2.png" alt="">
+			</div>
+
+			<form action="" class="basic-profile-info-form">
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input class="form-control" type="text">
+				</div>
+				<div class="form-group">
+					<label for="specialization">Specialization</label>
+					<input class="form-control" type="text">
+				</div>
+				<div class="form-group">
+					<label for="description">Description</label>
+					<textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
+				</div>
+				<button class="btn btn-success">Save</button>
+				<button class="btn btn-danger">cancel</button>
+			</form>
+
+			<div class="basic-profile-info">
+
+				<h1>Dr. John Doe
+					<i class="fa fa-pencil-square" aria-hidden="true"></i>
+				</h1>
+				<h3>some specialization</h3>
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi iusto aperiam vel pariatur aliquid iste recusandae consequuntur
+					labore voluptas
+				</p>
+				<p class="review">
+					<span>Reviews </span>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-half" aria-hidden="true"></i>
+				</p>
+				<button class="btn btn-primary">
+					<span>
+						Make an appointment
+					</span>
+					<i class="fa fa-medkit" aria-hidden="true"></i>
+				</button>
+			</div>
+		</div>
+		<div class="profile-body">
+			<div class="profile-education">
+
+				<form action="" class="profile-education-header-form">
+					<div class="form-group">
+						<label for="yearsOfExperience">Years of experience</label>
+						<input class="form-control" type="text">
+					</div>
+					<div class="form-group">
+						<label for="university">University</label>
+						<input class="form-control" type="text">
+					</div>
+					<div class="form-group">
+						<label for="Email">Email</label>
+						<input class="form-control" type="text">
+					</div>
+					<div class="form-group">
+						<label for="phoneNumber">Phone Number</label>
+						<input class="form-control" type="text">
+					</div>
+					<button class="btn btn-success">Save</button>
+					<button class="btn btn-danger">cancel</button>
+				</form>
+
+				<div class="profile-education-header">
+					<i class="fa fa-pencil-square"></i>
+					<p>
+						<i class="fa fa-check-circle"></i>
+						<span>Years of experience</span>
+					</p>
+					<p class="text-bold">
+						<i class="fa fa-university"></i>
+						<span>University name</span>
+					</p>
+					<p>
+						<i class="fa fa-envelope"></i>
+						<span>johndoe123456@gmail.com</span>
+					</p>
+					<p>
+						<i class="fa fa-phone"></i>
+						<span>+20123456789</span>
+					</p>
+				</div>
+
+				<div class="experience">
+					<h2>Education
+						<i class="fa fa-plus-square" data-toggle="modal" data-target="#adding-exp"></i>
+					</h2>
+					<div class="exp-item">
+						<span class="dot"></span>
+
+						<h3>
+							<span>University name</span>
+							<i class="fa fa-pencil-square" aria-hidden="true"></i>
+							<i class="fa fa-minus-square"></i>
+						</h3>
+						<p>
+							From:
+							<span data-start-date="2004-03-01"> Mar, 2004 </span>To:
+							<span data-end-date="2007-01-01"> Jan, 2007</span>
+						</p>
+						<h4>Hospital name</h4>
+						<p data-description="">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero voluptates dignissimos quos atque est suscipit delectus necessitatibus.
+						</p>
+					</div>
+					<div class="exp-item">
+						<span class="dot"></span>
+
+						<h3>
+							<span>University name</span>
+							<i class="fa fa-pencil-square" aria-hidden="true"></i>
+							<i class="fa fa-minus-square"></i>
+						</h3>
+						<p>
+							From:
+							<span data-start-date="2008-03-01"> Mar, 2008 </span>To:
+							<span data-end-date="2010-01-01"> Jan, 2010</span>
+						</p>
+						<h4>Hospital name</h4>
+						<p data-description="">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero voluptates dignissimos quos atque est suscipit delectus necessitatibus.
+						</p>
+					</div>
+					<div class="exp-item">
+						<span class="dot"></span>
+
+						<h3>
+							<span>University name</span>
+							<i class="fa fa-pencil-square" aria-hidden="true"></i>
+							<i class="fa fa-minus-square"></i>
+						</h3>
+						<p>
+							From:
+							<span data-start-date="2010-03-01"> Mar, 2010 </span>To:
+							<span data-end-date="20011-01-01"> Jan, 2011</span>
+						</p>
+						<h4>Hospital name</h4>
+						<p data-description="">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero voluptates dignissimos quos atque est suscipit delectus necessitatibus.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="experience">
+				<h2>Experience
+					<i class="fa fa-plus-square" data-toggle="modal" data-target="#adding-exp"></i>
+				</h2>
+				<div class="exp-item">
+					<span class="dot"></span>
+
+					<h3>
+						<span>Experience name</span>
+						<i class="fa fa-pencil-square" aria-hidden="true"></i>
+						<i class="fa fa-minus-square"></i>
+					</h3>
+					<p>
+						From:
+						<span data-start-date="2012-03-01"> Mar, 2012 </span>To:
+						<span data-end-date="2014-01-01"> Jan, 2014</span>
+					</p>
+					<h4>Hospital name</h4>
+					<p data-description="">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero voluptates dignissimos quos atque est suscipit delectus necessitatibus.
+					</p>
+				</div>
+				<div class="exp-item">
+					<span class="dot"></span>
+
+					<h3>
+						<span>Experience name</span>
+						<i class="fa fa-pencil-square" aria-hidden="true"></i>
+						<i class="fa fa-minus-square"></i>
+					</h3>
+					<p>
+						From:
+						<span data-start-date="2014-03-01"> Mar, 2014 </span>To:
+						<span data-end-date="2016-01-01"> Jan, 2016</span>
+					</p>
+					<h4>Hospital name</h4>
+					<p data-description="">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero voluptates dignissimos quos atque est suscipit delectus necessitatibus.
+					</p>
+				</div>
+				<div class="exp-item">
+					<span class="dot"></span>
+
+					<h3>
+						<span>Experience name</span>
+						<i class="fa fa-pencil-square" aria-hidden="true"></i>
+						<i class="fa fa-minus-square"></i>
+					</h3>
+					<p>
+						From:
+						<span data-start-date="2016-03-01"> Mar, 2016 </span>To:
+						<span data-end-date="2017-01-01"> Jan, 2017</span>
+					</p>
+					<h4>Hospital name</h4>
+					<p data-description="">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero voluptates dignissimos quos atque est suscipit delectus necessitatibus.
+					</p>
+				</div>
+
+			</div>
+		</div>
+	</div> -->

@@ -3,12 +3,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
+// import { PatientProfileComponent } from './profiles/patient-profile/patient-profile.component';
+import { ProfileModule } from './profiles/profile.module';
 import { TreatmentModule } from './treatments/treatment.module';
 import { AppointmentModule } from './appointments/appointment.module';
-import { ProfileModule } from './profiles/profile.module';
 import { HomeModule } from './home/home.module';
 import { FacilityModule } from './facilities/facility.module';
-
+import {CoreModule} from './core/core.module';
 import { TreatmentComponent } from './treatments/treatment/treatment.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { PatientsModule } from './patient/patients.module';
@@ -16,25 +17,38 @@ import { ReviewsModule } from './reviews/reviews.module';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { DrugsModule } from './drugs/drugs.module';
 
+//  import{appoinmentCardService} from '../shared/models/Services/appointmentcard-service'
+import { CalenderComponent } from './profiles/patient-profile/calender/calender.component';
+import { HomeComponent } from './home/home.component';
+import { sharedModule } from './shared/shared.module';
+import { appoinmentCardService } from './shared/models/Services/appointmentcard-service';
+// import { TreatmentComponent } from './treatments/treatment/treatment.component';
+// import { AppointmentBookingFormComponent } from './appointments/appointment-booking-form/appointment-booking-form.component';
+// import { MyhomeComponent } from './home/myhome/myhome.component';
+// import { DoctorSearchComponent } from './profiles/patient-profile/doctor-search/doctor-search.component';
+// import { DoctorItemComponent } from './profiles/patient-profile/doctor-item/doctor-item.component';
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
-  imports: [
 
+  imports: [
+    ProfileModule,
     BrowserModule,
     TreatmentModule,
-    AppointmentModule,
-    ProfileModule,
     HomeModule,
     FacilityModule,
     AppRoutingModule,
     PatientsModule,
     ReviewsModule,
     DrugsModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    CoreModule ,
+    sharedModule ,
+    AppointmentModule
   ],
-  providers: [],
+  providers: [appoinmentCardService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
