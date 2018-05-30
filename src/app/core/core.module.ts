@@ -11,6 +11,6 @@ import { RouterModule } from '@angular/router';
     ])
   ],
   declarations: [LoginComponent, SignupComponent],
-  exports:[LoginComponent,SignupComponent]
+  exports: [LoginComponent, SignupComponent]
 })
 export class CoreModule { }
