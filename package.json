@@ -21,29 +21,13 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
-<<<<<<< HEAD
     "@fortawesome/fontawesome": "^1.1.8",
     "angular-font-awesome": "^3.1.2",
-=======
-    "@ng-bootstrap/ng-bootstrap": "^2.0.0",
-    "angular-calendar": "^0.25.2",
-    "angular-datetimepicker-component": "^0.1.6",
-    "angular-forms-utils": "^0.4.15",
-    "angular-ui-utils": "^0.1.1",
->>>>>>> 440b7016eba4624ae25d0a9fbd2603c8e6ba2c56
     "bootstrap": "^4.1.1",
     "bootstrap-table": "^1.12.1",
     "core-js": "^2.4.1",
-<<<<<<< HEAD
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
-=======
-    "date-fns": "^1.29.0",
-    "fullcalendar": "^3.8.0",
-    "fullcalendar-scheduler": "^1.9.1",
-    "jquery": "^3.2.1",
-    "moment": "^2.20.1",
->>>>>>> 440b7016eba4624ae25d0a9fbd2603c8e6ba2c56
     "npm": "^6.0.1",
     "rxjs": "^5.5.6",
     "util": "^0.10.3",
