@@ -14,10 +14,11 @@ import { AppRoutingModule } from './/app-routing.module';
 import { PatientsModule } from './patient/patients.module';
 import { ReviewsModule } from './reviews/reviews.module';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { DrugsModule } from './drugs/drugs.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
 
@@ -30,6 +31,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     AppRoutingModule,
     PatientsModule,
     ReviewsModule,
+    DrugsModule,
     AngularFontAwesomeModule
   ],
   providers: [],

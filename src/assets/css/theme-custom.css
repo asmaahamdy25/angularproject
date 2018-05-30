@@ -21,6 +21,10 @@ a{
     transition: all 0.3s;
 }
 
+.panel-body {
+    padding: 15px;
+}
+
 /* ----------- Star Rating (Dynamic) ------------ */
 .mfp-wrap .mfp-container .mfp-content {
     position: relative;
