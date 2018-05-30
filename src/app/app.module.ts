@@ -11,24 +11,21 @@ import { HomeModule } from './home/home.module';
 import { FacilityModule } from './facilities/facility.module';
 import {CoreModule} from './core/core.module';
 import { TreatmentComponent } from './treatments/treatment/treatment.component';
-<<<<<<< HEAD
 import { AppRoutingModule } from './/app-routing.module';
 import { PatientsModule } from './patient/patients.module';
 import { ReviewsModule } from './reviews/reviews.module';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { DrugsModule } from './drugs/drugs.module';
-=======
 import { PatientAppointmentQueueComponent } from './appointments/patient-appointment-queue/patient-appointment-queue';
 // import {LoginComponent} from './core/login/login.component';
  import {SignupComponent} from './core/signup/signup.component';
 
->>>>>>> a175a68332b2e8c0b3cd4140f037b6cb348e7ddd
 
 //  import{appoinmentCardService} from '../shared/models/Services/appointmentcard-service'
 import { CalenderComponent } from './profiles/patient-profile/calender/calender.component';
 import { HomeComponent } from './home/home.component';
 import { sharedModule } from './shared/shared.module';
-import { appoinmentCardService } from './shared/models/Services/appointmentcard-service';
+import { AppoinmentCardService } from './shared/models/Services/appointmentcard-service';
 // import { TreatmentComponent } from './treatments/treatment/treatment.component';
 // import { AppointmentBookingFormComponent } from './appointments/appointment-booking-form/appointment-booking-form.component';
 // import { MyhomeComponent } from './home/myhome/myhome.component';
@@ -37,11 +34,7 @@ import { appoinmentCardService } from './shared/models/Services/appointmentcard-
 @NgModule({
   declarations: [
     AppComponent
-<<<<<<< HEAD
-  ],
-=======
     ],
->>>>>>> a175a68332b2e8c0b3cd4140f037b6cb348e7ddd
 
   imports: [
     ProfileModule,
@@ -58,7 +51,7 @@ import { appoinmentCardService } from './shared/models/Services/appointmentcard-
     sharedModule ,
     AppointmentModule
   ],
-  providers: [appoinmentCardService],
+  providers: [AppoinmentCardService],
   bootstrap: [AppComponent]
 })
 
