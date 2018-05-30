@@ -22,23 +22,22 @@ import { PatientAppointmentQueueComponent } from './appointments/patient-appoint
 
 
 //  import{appoinmentCardService} from '../shared/models/Services/appointmentcard-service'
-import { CalenderComponent } from './profiles/patient-profile/calender/calender.component';
 import { HomeComponent } from './home/home.component';
 import { sharedModule } from './shared/shared.module';
 import { AppoinmentCardService } from './shared/models/Services/appointmentcard-service';
-// import { TreatmentComponent } from './treatments/treatment/treatment.component';
-// import { AppointmentBookingFormComponent } from './appointments/appointment-booking-form/appointment-booking-form.component';
-// import { MyhomeComponent } from './home/myhome/myhome.component';
-// import { DoctorSearchComponent } from './profiles/patient-profile/doctor-search/doctor-search.component';
-// import { DoctorItemComponent } from './profiles/patient-profile/doctor-item/doctor-item.component';
+import { FormsModule } from '@angular/forms';
+import { DemoComponent } from './Demo/component';
+import { DemoModule } from './Demo/module';
+
 @NgModule({
   declarations: [
     AppComponent
     ],
 
   imports: [
+     BrowserModule,
     ProfileModule,
-    BrowserModule,
+    FormsModule,
     TreatmentModule,
     HomeModule,
     FacilityModule,
@@ -49,6 +48,24 @@ import { AppoinmentCardService } from './shared/models/Services/appointmentcard-
     AngularFontAwesomeModule,
     CoreModule ,
     sharedModule ,
+<<<<<<< HEAD
+=======
+    NgbModule.forRoot(),
+    CalendarModule.forRoot()
+   
+  ,
+  DemoModule,
+       
+    
+    RouterModule.forRoot([
+      {
+        path:'', component:HomeComponent}
+      ,
+      {
+        path:'calender', component:DemoComponent
+      }
+    ]),
+>>>>>>> 440b7016eba4624ae25d0a9fbd2603c8e6ba2c56
     AppointmentModule
   ],
   providers: [AppoinmentCardService],
