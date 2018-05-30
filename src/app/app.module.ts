@@ -11,6 +11,11 @@ import { HomeModule } from './home/home.module';
 import { FacilityModule } from './facilities/facility.module';
 import {CoreModule} from './core/core.module';
 import { TreatmentComponent } from './treatments/treatment/treatment.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { PatientsModule } from './patient/patients.module';
+import { ReviewsModule } from './reviews/reviews.module';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { DrugsModule } from './drugs/drugs.module';
 import { PatientAppointmentQueueComponent } from './appointments/patient-appointment-queue/patient-appointment-queue';
 // import {LoginComponent} from './core/login/login.component';
  import {SignupComponent} from './core/signup/signup.component';
@@ -19,56 +24,44 @@ import { PatientAppointmentQueueComponent } from './appointments/patient-appoint
 //  import{appoinmentCardService} from '../shared/models/Services/appointmentcard-service'
 import { HomeComponent } from './home/home.component';
 import { sharedModule } from './shared/shared.module';
-import { appoinmentCardService } from './shared/models/Services/appointmentcard-service';
-import { CalendarModule } from 'angular-calendar';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-// import{DemoUtilsModule}from '../app/profiles/demo-utils/module/module.module'
-import {
-  NgbDatepickerModule,
-  NgbTimepickerModule
-} from '@ng-bootstrap/ng-bootstrap';
+import { AppoinmentCardService } from './shared/models/Services/appointmentcard-service';
+import { FormsModule } from '@angular/forms';
 import { DemoComponent } from './Demo/component';
 import { DemoModule } from './Demo/module';
-import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
-<<<<<<< HEAD
-    AppComponent  
-=======
     AppComponent
->>>>>>> a175a68332b2e8c0b3cd4140f037b6cb348e7ddd
     ],
 
   imports: [
      BrowserModule,
     ProfileModule,
     FormsModule,
-   
     TreatmentModule,
     HomeModule,
     FacilityModule,
+    AppRoutingModule,
+    PatientsModule,
+    ReviewsModule,
+    DrugsModule,
+    AngularFontAwesomeModule,
     CoreModule ,
     sharedModule ,
-    NgbModule.forRoot(),
-    CalendarModule.forRoot()
-   
   ,
   DemoModule,
-       
-    
+
     RouterModule.forRoot([
       {
-        path:'', component:HomeComponent}
+        path: '', component: HomeComponent}
       ,
       {
-        path:'calender', component:DemoComponent
+        path: 'calender', component: DemoComponent
       }
     ]),
     AppointmentModule
-
-
   ],
-  providers: [appoinmentCardService],
+  providers: [AppoinmentCardService],
   bootstrap: [AppComponent]
 })
 
