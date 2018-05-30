@@ -36,12 +36,13 @@
         "../node_modules/fullcalendar-scheduler/dist/scheduler.min.css"
       ],
       "scripts": [
-
+        "assets/js/jquery.js",
         "assets/js/bootstrap.min.js",
         "../node_modules/jquery/dist/jquery.min.js",
         "../node_modules/moment/min/moment.min.js",
         "../node_modules/fullcalendar/dist/fullcalendar.min.js",
         "../node_modules/fullcalendar-scheduler/dist/scheduler.min.js"
+        
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
