@@ -36,25 +36,21 @@ import {
       secondary: '#FDF1BA'
     }
   };
-  
+
   @Component({
-    selector: 'mwl-demo-component',
+    selector: 'app-demo-component',
     changeDetection: ChangeDetectionStrategy.OnPush,
     styleUrls: ['styles.css'],
     templateUrl: 'template.html'
   })
   export class DemoComponent {
     @ViewChild('modalContent') modalContent: TemplateRef<any>;
-  
-    view: string = 'month';
-  
+    view: String = 'month';
     viewDate: Date = new Date();
-  
     modalData: {
       action: string;
       event: CalendarEvent;
     };
-  
     actions: CalendarEventAction[] = [
       {
         label: '<i class="fa fa-fw fa-pencil"></i>',
