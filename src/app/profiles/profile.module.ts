@@ -6,13 +6,19 @@ import { InvoicesComponent } from './patient-profile/invoices/invoices.component
 import { ReferralComponent } from './patient-profile/referral/referral.component';
 import { XRayComponent } from './patient-profile/x-ray/x-ray.component';
 import { DoctorCardComponent } from './patient-profile/doctor-card/doctor-card.component';
-import { CalenderComponent } from './patient-profile/calender/calender.component';
-// import $ = require("jquery");
-// import * as $ from "jquery";
+
+import { CalendarModule } from 'angular-calendar';
+
+import { FormsModule } from '@angular/forms';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   imports: [
+    
     CommonModule
   ],
-  declarations: [PatientProfileComponent, ProfileComponent, InvoicesComponent, ReferralComponent, XRayComponent, DoctorCardComponent, CalenderComponent]
+  declarations: [PatientProfileComponent,
+     ProfileComponent, InvoicesComponent,
+      ReferralComponent, XRayComponent,
+       DoctorCardComponent]
 })
 export class ProfileModule { }
