@@ -1,0 +1,127 @@
+<form role="form" action="Index">
+    <div class="col-md-2 col-lg-2">
+
+        <div id="accordion" class="panel panel-primary">
+
+            <div class="panel-body">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="input-group input-search">
+                        <input type="text" class="form-control" name="TextSearch" placeholder="Search...">
+                       <!--  @*@Html.EditorFor(a=> a.TextSearch, new { @class="form-control", @placeholder="Search...", @type="text"})*@ -->
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                        </span>
+                    </div>
+                </div>
+                <hr />
+                <div class="panel-heading ">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse0">
+                            <i class="indicator fa fa-caret-down" aria-hidden="true"></i> Gender
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse0" class="panel-collapse collapse in">
+                    <ul class="list-group">
+                       
+                            <li class="list-group-item">
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="Gender" value="Male"> Male</label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="Gender" value="Female"> Female</label>
+                                </div>
+                            </li>
+                       
+                            <li class="list-group-item">
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="Gender" value="Male"> Male</label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="Gender" value="Female"> Female</label>
+                                </div>
+                            </li>
+                        
+                    </ul>
+                </div>
+                <div class="panel-heading ">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse1">
+                            <i class="indicator fa fa-caret-down" aria-hidden="true"></i> Payment
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse in">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="radio" name="Payment" value="true">
+                                    Done
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="radio" name="Payment" value="false">
+                                    Still
+                                </label>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse3"><i class="indicator fa fa-caret-down" aria-hidden="true"></i> Arrival</a>
+                    </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse in">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="radio" name="Arrival" value="true">
+                                    Arrived
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="radio" name="Arrival" value="false">
+                                    Still
+                                </label>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse3"><i class="indicator fa fa-caret-down" aria-hidden="true"></i> Dental Service</a>
+                    </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse in">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="ServiceName" value="true">
+                                    Service Names
+                                </label>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form>
