@@ -17,43 +17,49 @@ import { PatientAppointmentQueueComponent } from './appointments/patient-appoint
 
 
 //  import{appoinmentCardService} from '../shared/models/Services/appointmentcard-service'
-import { CalenderComponent } from './profiles/patient-profile/calender/calender.component';
 import { HomeComponent } from './home/home.component';
 import { sharedModule } from './shared/shared.module';
 import { appoinmentCardService } from './shared/models/Services/appointmentcard-service';
-// import { TreatmentComponent } from './treatments/treatment/treatment.component';
-// import { AppointmentBookingFormComponent } from './appointments/appointment-booking-form/appointment-booking-form.component';
-// import { MyhomeComponent } from './home/myhome/myhome.component';
-// import { DoctorSearchComponent } from './profiles/patient-profile/doctor-search/doctor-search.component';
-// import { DoctorItemComponent } from './profiles/patient-profile/doctor-item/doctor-item.component';
+import { CalendarModule } from 'angular-calendar';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+// import{DemoUtilsModule}from '../app/profiles/demo-utils/module/module.module'
+import {
+  NgbDatepickerModule,
+  NgbTimepickerModule
+} from '@ng-bootstrap/ng-bootstrap';
+import { DemoComponent } from './Demo/component';
+import { DemoModule } from './Demo/module';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
-    AppComponent 
+    AppComponent  
     ],
 
   imports: [
+     BrowserModule,
     ProfileModule,
-    BrowserModule,
+    FormsModule,
+   
     TreatmentModule,
     HomeModule,
     FacilityModule,
     CoreModule ,
-    sharedModule 
-    ,
+    sharedModule ,
+    NgbModule.forRoot(),
+    CalendarModule.forRoot()
+   
+  ,
+  DemoModule,
+       
+    
     RouterModule.forRoot([
       {
-        path:'', component:HomeComponent
+        path:'', component:HomeComponent}
+      ,
+      {
+        path:'calender', component:DemoComponent
       }
     ]),
-    // RouterModule.forRoot([
-    //   { path: 'patient-profile', component: PatientProfileComponent },
-    //   { path: 'treatment', component: TreatmentComponent },
-    //   { path: 'login', component: LoginComponent },
-    //   { path: 'signup', component: SignupComponent },
-    //   { path: 'home', component: MyhomeComponent }
-
-
-    // ]),
     AppointmentModule
     
     
