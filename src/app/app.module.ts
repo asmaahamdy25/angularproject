@@ -26,8 +26,10 @@ import { HomeComponent } from './home/home.component';
 import { sharedModule } from './shared/shared.module';
 import { AppoinmentCardService } from './shared/models/Services/appointmentcard-service';
 import { FormsModule } from '@angular/forms';
-import { DemoComponent } from './Demo/component';
-import { DemoModule } from './Demo/module';
+import { DemoModule } from './DEMO/module';
+import { DemoComponent } from './DEMO/component';
+// import { DemoModule } from './Demo/module';
+// import { DemoComponent } from './DEMO/component';
 
 @NgModule({
   declarations: [
@@ -46,9 +48,10 @@ import { DemoModule } from './Demo/module';
     ReviewsModule,
     DrugsModule,
     CoreModule ,
+    DemoModule,
     sharedModule ,
-  ,
-  DemoModule,
+
+  
 
     RouterModule.forRoot([
       {
