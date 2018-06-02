@@ -20,7 +20,6 @@ import { sharedModule } from './shared/shared.module';
 import { AppoinmentCardService } from './shared/models/Services/appointmentcard-service';
 import { FormsModule } from '@angular/forms';
 import { DemoModule } from './DEMO/module';
-import { DemoComponent } from './DEMO/component';
 
 @NgModule({
   declarations: [
@@ -40,7 +39,8 @@ import { DemoComponent } from './DEMO/component';
     DrugsModule,
     CoreModule ,
     sharedModule ,
-    AppointmentModule
+    AppointmentModule,
+    DemoModule
   ],
   providers: [AppoinmentCardService],
   bootstrap: [AppComponent]

@@ -21,7 +21,7 @@ import {
     CalendarEventAction,
     CalendarEventTimesChangedEvent
   } from 'angular-calendar';
-  
+
   const colors: any = {
     red: {
       primary: '#ad2121',
@@ -66,9 +66,7 @@ import {
         }
       }
     ];
-  
     refresh: Subject<any> = new Subject();
-  
     events: CalendarEvent[] = [
       {
         start: subDays(startOfDay(new Date()), 1),
@@ -102,11 +100,10 @@ import {
         draggable: true
       }
     ];
-  
-    activeDayIsOpen: boolean = true;
-  
+
+    activeDayIsOpen: Boolean = true;
+
     constructor(private modal: NgbModal) {}
-  
     dayClicked({ date, events }: { date: Date; events: CalendarEvent[] }): void {
       if (isSameMonth(date, this.viewDate)) {
         if (
@@ -120,7 +117,7 @@ import {
         }
       }
     }
-  
+
     eventTimesChanged({
       event,
       newStart,
@@ -131,12 +128,12 @@ import {
       this.handleEvent('Dropped or resized', event);
       this.refresh.next();
     }
-  
+
     handleEvent(action: string, event: CalendarEvent): void {
       this.modalData = { event, action };
       this.modal.open(this.modalContent, { size: 'lg' });
     }
-  
+
     addEvent(): void {
       this.events.push({
         title: 'New event',
@@ -152,4 +149,3 @@ import {
       this.refresh.next();
     }
   }
-  
