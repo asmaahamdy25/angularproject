@@ -2,6 +2,9 @@ section{
     width:65%;
     margin: 0 auto;
 }
+input .ng-invalid .ng-touched {
+  border: 1px solid red;
+}
 	/* Sign Screens - Wrappers */
   .body-sign {
     display: table;
@@ -80,57 +83,6 @@ section{
   }
 
   /* Lock Screen */
-  .body-locked {
-    background: url(assets/images/patterns/noisy_net.png) repeat;
-    max-width: none;
-    min-height: 400px;
-  }
-  .body-locked.body-locked-inline {
-    background: none;
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    min-height: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 9999;
-  }
-  .body-locked .panel-sign {
-    margin: 0 auto;
-    max-width: 400px;
-    padding-top: 40px;
-  }
-  .body-locked .panel-sign .panel-body {
-    border-radius: 5px;
-    position: relative;
-  }
-  .body-locked .current-user {
-    margin-top: 60px;
-    margin-bottom: 35px;
-  }
-  .body-locked .current-user .user-image {
-    border: 5px solid #cccccc;
-    border-radius: 150px;
-    height: 150px;
-    left: 50%;
-    position: absolute;
-    margin-left: -75px;
-    top: -75px;
-    width: 150px;
-  }
-  .body-locked .current-user .user-name {
-    font-size: 30px;
-    font-size: 3rem;
-    line-height: 36px;
-    line-height: 3.6rem;
-  }
-  .body-locked .current-user .user-email {
-    font-size: 11px;
-    font-size: 1.1rem;
-    line-height: 14px;
-    line-height: 1.4rem;
-  }
 
   /* Locked Screen - Responsive Landscape */
   @media only screen and (max-width: 767px) and (orientation: landscape) {
