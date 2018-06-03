@@ -8,10 +8,10 @@ import { DrugsRoutingModule } from './drugs-routing.module';
 @NgModule({
     declarations: [
         DrugsComponent
-    ],
+],
     imports: [
         CommonModule,
         DrugsRoutingModule
     ]
-  })
-  export class DrugsModule { }
+})
+export class DrugsModule { }

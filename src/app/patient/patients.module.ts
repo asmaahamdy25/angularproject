@@ -4,9 +4,9 @@ import { RouterModule } from '@angular/router';
 import { PatientComponent } from './patient.component';
 import { CommonModule } from '@angular/common';
 import { PatientRoutingModule } from './patient-routing.module';
-import { PatientCardComponent } from './patient-card-list/patient-card/patient-card.component';
 import { PatientCardListComponent } from './patient-card-list/patient-card-list.component';
 import { SearchFiltersComponent } from './search-filters/search-filters.component';
+import { PatientCardComponent } from './patient-card/patient-card.component';
 
 
 @NgModule({
@@ -15,7 +15,9 @@ import { SearchFiltersComponent } from './search-filters/search-filters.componen
       PatientCardComponent,
       PatientCardListComponent,
       SearchFiltersComponent
-  ],
+,
+    PatientCardComponent
+],
   imports: [
       CommonModule,
       PatientRoutingModule
