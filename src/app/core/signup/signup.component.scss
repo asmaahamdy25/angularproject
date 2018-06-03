@@ -2,6 +2,9 @@ section{
     width:65%;
     margin: 0 auto;
 }
+input .ng-invalid .ng-touched {
+  border: 1px solid red;
+}
 	/* Sign Screens - Wrappers */
   .body-sign {
     display: table;
@@ -80,6 +83,8 @@ section{
   }
 
   /* Lock Screen */
+<<<<<<< HEAD
+=======
   .body-locked {
     background: url(/assets/images/patterns/noisy_net.png) repeat;
     max-width: none;
@@ -131,6 +136,7 @@ section{
     line-height: 14px;
     line-height: 1.4rem;
   }
+>>>>>>> 5b96245c2441e4aad094188ea617f3d9ca4fc6a0
 
   /* Locked Screen - Responsive Landscape */
   @media only screen and (max-width: 767px) and (orientation: landscape) {
