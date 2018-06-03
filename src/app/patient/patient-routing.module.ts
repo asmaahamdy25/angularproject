@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { PatientComponent } from './patient.component';
-import { PatientCardComponent } from './patient-card-list/patient-card/patient-card.component';
+import { PatientCardComponent } from './patient-card/patient-card.component';
 
 const routes: Routes = [
   { path: 'patient', component: PatientComponent },

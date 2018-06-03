@@ -21,12 +21,22 @@
       "styles" : [
         "assets/css/app.css",
         "assets/css/edit.css",
+        "assets/css/theme.css",
+        "assets/css/default.css",
+        "assets/css/theme-custom.css",
+        "assets/css/star-rating.css",
+        "assets/css/magnific-popup.css",
+        "assets/css/datatables.css",
         "styles.css",
         "../node_modules/angular-calendar/css/angular-calendar.css"
       ],
       "scripts": [
-
-
+        "assets/js/star-rating.js",
+        "assets/js/magnific-popup.js",
+        "assets/js/jquery.dataTables.js",
+        "assets/js/datatables.js",
+        "assets/js/examples.datatables.editable.js",
+        "assets/js/theme.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
