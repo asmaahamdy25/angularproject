@@ -157,6 +157,7 @@ a:active {
 		-webkit-box-flex: 2;
 		-moz-box-flex: 2;
 		-o-box-flex: 2;
+		box-flex: 2;
 		-webkit-flex: 2;
 		-moz-flex: 2;
 		-ms-flex: 2;
@@ -620,6 +621,7 @@ a:active {
 		-webkit-box-flex: 2;
 		-moz-box-flex: 2;
 		-o-box-flex: 2;
+		box-flex: 2;
 		-webkit-flex: 2;
 		-moz-flex: 2;
 		-ms-flex: 2;
@@ -3483,6 +3485,7 @@ input[type="tel"],
 input[type="color"],
 textarea {
 	-webkit-appearance: none;
+	appearance: none;
 }
 
 .form-control::-webkit-input-placeholder,
