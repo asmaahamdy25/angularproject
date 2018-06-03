@@ -1,21 +1,28 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AppointmentsQueueComponent } from './appointments-queue/appointments-queue.component';
-import { AppointmentBookingFormComponent } from './appointment-booking-form/appointment-booking-form.component';
-import { AppointmentCardComponent } from './appointments-queue/appointment-card/appointment-card.component';
+import { appointmentsRoutingModule } from './appointments-Routing.module';
+import { RouterModule } from '@angular/router';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { sharedModule } from '../shared/shared.module';
 @NgModule({
+  declarations:[
+    
+ 
+  ],
   imports: [
-    CommonModule
+    RouterModule,
+    CommonModule,
+    appointmentsRoutingModule 
+   ,FormsModule,                               // <========== Add this line!
+   ReactiveFormsModule ,
+   sharedModule
+    
   ],
-  declarations: [
-    AppointmentsQueueComponent,
-    AppointmentBookingFormComponent,
-    AppointmentCardComponent
-],
-  exports: [
-    AppointmentsQueueComponent,
-    AppointmentBookingFormComponent
-  ],
+  exports:[FormsModule]
 })
-export class AppointmentModule { }
+export class AppointmentModule {
+
+
+  
+ }
