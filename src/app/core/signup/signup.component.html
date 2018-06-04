@@ -6,31 +6,29 @@
           <i class="fa fa-user mr-xs"></i> Sign Up</h2>
       </div>
       <div class="panel-body">
-        <form [formGroup]="signupForm">
+        <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
           <div class="form-section">
               <div class="form-group mb-lg">
                 <label>First Name</label>
                 <input formControlName="firstName" name="name" type="text" class="form-control input-lg" />
-              <div *ngIf="firstname.touched && firstname.invalid" class="alert alert-danger">
-                <div class="error" *ngIf="firstname.errors['required']"> this filed is required</div>
-                <div  class=" error" *ngIf="firstname.errors['UsernameValidators']">Name can't contain space </div>
+              <div *ngIf="firstname.touched && firstname.invalid" >
+               this filed is required
               </div>
               </div>
               <div class="form-group mb-lg">
                 <label>Last Name</label>
                 <input formControlName="lastName" name="name" type="text" class="form-control input-lg" />
-                <div *ngIf="lastname.invalid && lastname.touched" class="alert alert-danger">
+                <div *ngIf="lastname.invalid && lastname.touched" >
                     <div *ngIf="lastname.errors['required']"> this filed is required</div>
-                    <div *ngIf="lastname.errors['UsernameValidators']">Name can't contain space</div>
                   </div>
               </div>
 
             <div class="form-group mb-lg">
               <label>E-mail Address</label>
               <input formControlName="email" name="email" type="email" class="form-control input-lg" />
-              <div *ngIf="email.invalid && email.touched" class="alert alert-danger">
+              <div *ngIf="email.invalid && email.touched" >
                   <div *ngIf="email.errors['required']"> this filed is required</div>
-                  <div *ngIf="email.errors['email']">this email is invalid</div>
+                  <div *ngIf="email.errors['pattern']"> email is invalid</div>
                 </div>
             </div>
             <form formGroupName="password">
@@ -39,17 +37,18 @@
                   <div class="col-sm-6 mb-lg">
                     <label>Password</label>
                     <input formControlName="pwd" name="pwd" type="password" class="form-control input-lg" />
-                    <div *ngIf="password.invalid && password.touched" class="alert alert-danger">
+                    <div *ngIf="password.invalid && password.touched" >
                         <div *ngIf="password.errors['required']"> this filed is required</div>
-                        <div *ngIf="password.errors['minLength']">password minLength 8 </div>
+                        <div *ngIf="password.errors['minlength']">password minLength 8 </div>
                       </div>
                   </div>
                   <div class="col-sm-6 mb-lg">
                     <label>Password Confirmation</label>
                     <input formControlName="pwd_confirm" name="pwd_confirm" type="password" class="form-control input-lg" />
-                    <div *ngIf="conpassword.invalid && conpassword.touched" class="help-block">
-                        <div *ngIf="conpassword.errors['required']"> this filed is required</div>
-                        <div *ngIf="conpassword.errors['MutchPassword']">it is not match </div>
+                    <div *ngIf="confpassword.invalid && confpassword.touched" >
+                        <div *ngIf="confpassword.errors['required']"> this filed is required</div>
+                        <div *ngIf="confpassword.errors['minlength']">password minLength 8 </div>
+                        <div *ngIf="confpassword.errors['MutchPassword']">it is not match </div>
                       </div>
                   </div>
                 </div>
@@ -67,15 +66,18 @@
             <div class="patient role">
               <div class=" form-group mb-lg">
                 <label>SSN</label>
-                <input formControlName="ssn" name="ssn" type="number" class="form-control input-lg" />
-                <div *ngIf="serialNumber.invalid && serialNumber.touched" class="help-block">
+                <input formControlName="ssn" name="ssn" type="text" class="form-control input-lg" />
+                <div *ngIf="serialNumber.invalid && serialNumber.touched" >
                     <div *ngIf="serialNumber.errors['required']"> this filed is required</div>
-                    <div *ngIf="serialNumber.errors['minLength']">minLength is 16</div>
+                    <div *ngIf="serialNumber.errors['maxlength']">maxLength is 16</div>
                 </div>
               </div>
               <div class=" form-group mb-lg">
                 <label>Address</label>
                 <input formControlName="address" name="address" type="text" class="form-control input-lg" />
+             <div *ngIf="address.invalid && address.touched">
+             this field is rquired
+             </div>
               </div>
               <div class="form-group mb-lg">
                 <label>DateOfBirth</label>
@@ -85,20 +87,22 @@
             <div class="row">
               <div class="col-sm-6">
                 <div class="checkbox-custom checkbox-default">
-                  <input id="AgreeTerms" name="agreeterms" type="checkbox" />
+                  <input formControlName="term" f id="AgreeTerms" name="agreeterms" type="checkbox" />
                   <label for="AgreeTerms">I agree with
                     <a href="#">terms of use</a>
                   </label>
+                  <div *ngIf="term.invalid && term.touched">This field is required</div>
                 </div>
               </div>
               <div class="col-sm-6 text-right">
-                <button type="submit" class="btn btn-primary hidden-xs">Sign Up</button>
+                <button type="submit"  class="btn btn-primary hidden-xs">Sign Up</button>
                 <button type="submit" class="btn btn-primary btn-block btn-lg visible-xs mt-lg">Sign Up</button>
               </div>
             </div>
           </div>
 
         </form>
+
       </div>
     </div>
 

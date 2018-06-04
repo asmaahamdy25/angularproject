@@ -1,9 +1,10 @@
-import { AbstractControl,  ValidationErrors } from '@angular/forms';
+import { AbstractControl } from '@angular/forms';
 
 export  function  UsernameValidators  (control: AbstractControl ) {
-  if ( control.value && control.value.legnth > 0) {
+  if ( control.value &&  control.value.Length > 0) {
+    console.log('in');
   if ( (control.value as string).indexOf(' ') >= 0 ) {
-  return { Namecannotcontainspace : true};
+  return { namecontainspace : true};
  }
 }
  return null;
