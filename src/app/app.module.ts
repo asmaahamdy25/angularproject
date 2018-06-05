@@ -39,6 +39,8 @@ import { DemoModule } from './DEMO/module';
     DrugsModule,
     CoreModule ,
     sharedModule,
+    AppointmentModule,
+    DemoModule,
     RouterModule.forRoot([
       {
         path: '', component: HomeComponent
@@ -53,9 +55,6 @@ import { DemoModule } from './DEMO/module';
 
 
     // ]),
-    AppointmentModule,
-    sharedModule,
-    DemoModule
   ],
   providers: [AppoinmentCardService],
   bootstrap: [AppComponent]
