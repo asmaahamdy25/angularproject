@@ -27,6 +27,7 @@
         "assets/css/star-rating.css",
         "assets/css/magnific-popup.css",
         "assets/css/datatables.css",
+        "assets/css/simple-line-icons/css/simple-line-icons.css",
         "styles.css",
         "../node_modules/angular-calendar/css/angular-calendar.css"
       ],
