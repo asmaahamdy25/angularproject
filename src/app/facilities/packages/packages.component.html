@@ -1,0 +1,27 @@
+<!-- Start package component -->
+
+<div id="packages" class="row">
+    <div class="package" *ngFor="let pack of packages">
+        <div class="package-head text-center">
+            <p>{{ pack.packageName }}</p>
+            <i class="{{pack.icon}}" aria-hidden="true"></i>
+            <p>${{pack.price}}/month</p>
+        </div>
+        <div class="package-body">
+            <p class="text-center"># features</p>
+            <ul class="list-group text-center">
+                <li class="list-group-item" *ngFor="let packf of pack.features">{{packf}}</li>
+                <!-- <li class="list-group-item">20 Gigabyte storage</li>
+                <li class="list-group-item">Patients statistics</li>
+                <li class="list-group-item">Clinic Statistic</li>
+                <li class="list-group-item">UI support</li> -->
+            </ul>
+            <button class="btn btn-success">subscribe</button>
+        </div>
+    </div>
+
+
+<!-- End package component -->
+  
+</div>
+<!-- End package component -->
