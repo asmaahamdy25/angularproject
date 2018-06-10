@@ -4,12 +4,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { SignupComponent } from './core/signup/signup.component';
 import { DemoComponent } from './DEMO/component';
+import { ChartsComponent } from './facilites/charts/charts.component';
 
 /*should be Home Module*/
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'signup', component: SignupComponent},
-  {path: 'demo', component: DemoComponent}
+  {path: 'demo', component: DemoComponent},
+  {path: 'charts', component: ChartsComponent}
 ];
 
 @NgModule({
