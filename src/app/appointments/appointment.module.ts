@@ -1,20 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { appointmentsRoutingModule } from './appointments-Routing.module';
+import { AppointmentsRoutingModule } from './appointments-Routing.module';
 import { RouterModule } from '@angular/router';
 //import { AppointmentCardComponent } from './patient-appointment-queue/appointment-card/appointment-card.component';
 
 @NgModule({
-  declarations:[
-    
-    
+  declarations: [
+
   ],
   imports: [
     RouterModule,
     CommonModule,
-    appointmentsRoutingModule 
-   
-    
+    AppointmentsRoutingModule 
+
   ]
 })
 export class AppointmentModule { }

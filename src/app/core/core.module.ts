@@ -8,6 +8,6 @@ import { SignupComponent } from './signup/signup.component';
     CommonModule
   ],
   declarations: [LoginComponent, SignupComponent],
-  exports:[LoginComponent,SignupComponent]
+  exports: [LoginComponent, SignupComponent]
 })
 export class CoreModule { }

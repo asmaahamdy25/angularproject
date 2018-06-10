@@ -19,7 +19,7 @@ import { PatientAppointmentQueueComponent } from './appointments/patient-appoint
 //  import{appoinmentCardService} from '../shared/models/Services/appointmentcard-service'
 import { CalenderComponent } from './profiles/patient-profile/calender/calender.component';
 import { HomeComponent } from './home/home.component';
-import { sharedModule } from './shared/shared.module';
+import { SharedModule } from './shared/shared.module';
 import { appoinmentCardService } from './shared/models/Services/appointmentcard-service';
 // import { TreatmentComponent } from './treatments/treatment/treatment.component';
 // import { AppointmentBookingFormComponent } from './appointments/appointment-booking-form/appointment-booking-form.component';
@@ -28,7 +28,7 @@ import { appoinmentCardService } from './shared/models/Services/appointmentcard-
 // import { DoctorItemComponent } from './profiles/patient-profile/doctor-item/doctor-item.component';
 @NgModule({
   declarations: [
-    AppComponent 
+    AppComponent
     ],
 
   imports: [
@@ -38,11 +38,10 @@ import { appoinmentCardService } from './shared/models/Services/appointmentcard-
     HomeModule,
     FacilityModule,
     CoreModule ,
-    sharedModule 
-    ,
+    SharedModule ,
     RouterModule.forRoot([
       {
-        path:'', component:HomeComponent
+        path: '', component: HomeComponent
       }
     ]),
     // RouterModule.forRoot([
@@ -55,8 +54,6 @@ import { appoinmentCardService } from './shared/models/Services/appointmentcard-
 
     // ]),
     AppointmentModule
-    
-    
 
   ],
   providers: [appoinmentCardService],

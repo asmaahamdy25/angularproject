@@ -19,11 +19,6 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-<<<<<<< HEAD
-        "assets/css/app.css",
-        "assets/css/default.css",
-        "styles.css"
-=======
         "assets/css/bootstrap.css",
         
         
@@ -35,19 +30,12 @@
         "assets/css/edit.css",
         
         
-        "styles.css",
-        
-        "../node_modules/fullcalendar/dist/fullcalendar.min.css",
-        "../node_modules/fullcalendar-scheduler/dist/scheduler.min.css"
->>>>>>> 194dc6f615984784be7d851cd24d79c0c17e98bd
+        "styles.css"
+
       ],
       "scripts": [
 
-        "assets/js/bootstrap.min.js",
-        "../node_modules/jquery/dist/jquery.min.js",
-        "../node_modules/moment/min/moment.min.js",
-        "../node_modules/fullcalendar/dist/fullcalendar.min.js",
-        "../node_modules/fullcalendar-scheduler/dist/scheduler.min.js"
+        "assets/js/bootstrap.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
