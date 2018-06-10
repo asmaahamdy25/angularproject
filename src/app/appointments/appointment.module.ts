@@ -6,23 +6,16 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { sharedModule } from '../shared/shared.module';
 @NgModule({
-  declarations:[
-    
- 
-  ],
+  declarations: [],
   imports: [
     RouterModule,
     CommonModule,
-    appointmentsRoutingModule 
-   ,FormsModule,                               // <========== Add this line!
-   ReactiveFormsModule ,
-   sharedModule
-    
+    appointmentsRoutingModule,
+    FormsModule,
+    ReactiveFormsModule ,
+    sharedModule
   ],
-  exports:[FormsModule]
+  exports: [FormsModule]
 })
 export class AppointmentModule {
-
-
-  
  }

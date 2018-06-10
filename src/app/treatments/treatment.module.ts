@@ -16,7 +16,6 @@ import { AppointmentModule } from '../appointments/appointment.module';
 @NgModule({
   imports: [
     CommonModule
-  
     // ,
     // sharedModule
   ],

@@ -37,11 +37,25 @@ import {FacilitesModule} from './facilites/facilites.module';
     ReviewsModule,
     DrugsModule,
     CoreModule ,
-    sharedModule ,
+    sharedModule,
     AppointmentModule,
     DemoModule,
     FacilitesModule,
 
+    RouterModule.forRoot([
+      {
+        path: '', component: HomeComponent
+      }
+    ]),
+    // RouterModule.forRoot([
+    //   { path: 'patient-profile', component: PatientProfileComponent },
+    //   { path: 'treatment', component: TreatmentComponent },
+    //   { path: 'login', component: LoginComponent },
+    //   { path: 'signup', component: SignupComponent },
+    //   { path: 'home', component: MyhomeComponent }
+
+
+    // ]),
   ],
   providers: [AppoinmentCardService],
   bootstrap: [AppComponent]

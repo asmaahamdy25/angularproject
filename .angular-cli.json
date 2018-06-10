@@ -18,7 +18,7 @@
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
-      "styles" : [
+      "styles": [
         "assets/css/app.css",
         "assets/css/edit.css",
         "assets/css/theme.css",
@@ -27,10 +27,12 @@
         "assets/css/star-rating.css",
         "assets/css/magnific-popup.css",
         "assets/css/datatables.css",
+        "assets/css/simple-line-icons/css/simple-line-icons.css",
         "styles.css",
         "../node_modules/angular-calendar/css/angular-calendar.css"
       ],
       "scripts": [
+        "assets/js/bootstrap.min.js",
         "assets/js/star-rating.js",
         "assets/js/magnific-popup.js",
         "assets/js/jquery.dataTables.js",
