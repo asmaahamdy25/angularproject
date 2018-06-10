@@ -20,6 +20,7 @@ import { sharedModule } from './shared/shared.module';
 import { AppoinmentCardService } from './shared/models/Services/appointmentcard-service';
 import { FormsModule } from '@angular/forms';
 import { DemoModule } from './DEMO/module';
+import { CollapseModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
@@ -40,11 +41,13 @@ import { DemoModule } from './DEMO/module';
     CoreModule ,
     sharedModule,
     AppointmentModule,
+    CollapseModule.forRoot(),
     DemoModule,
     RouterModule.forRoot([
       {
         path: '', component: HomeComponent
       }
+
     ]),
     // RouterModule.forRoot([
     //   { path: 'patient-profile', component: PatientProfileComponent },

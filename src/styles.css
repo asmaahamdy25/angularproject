@@ -7,3 +7,6 @@
 @import './assets/css/theme-custom.css';
 @import './assets/css/star-rating.css'; */
 
+body{
+  background-color:white;
+}
