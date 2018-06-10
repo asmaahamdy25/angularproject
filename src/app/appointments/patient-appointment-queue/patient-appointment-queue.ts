@@ -3,7 +3,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IAppointment } from '../../shared/models/interfaces/IAppointment';
-import { appoinmentCardService } from '../../shared/models/Services/appointmentcard-service';
+import { AppoinmentCardService } from '../../shared/models/Services/appointmentcard-service';
 
 
 @Component({
@@ -15,7 +15,7 @@ export class PatientAppointmentQueueComponent implements OnInit {
 
  
   public appointmentcards: IAppointment[];
-  constructor(private appoinmentCardService: appoinmentCardService) {
+  constructor(private appoinmentCardService: AppoinmentCardService) {
 
     this.appointmentcards = appoinmentCardService.getAll();
   }

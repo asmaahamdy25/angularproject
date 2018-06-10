@@ -19,15 +19,9 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "assets/css/bootstrap.css",
-        
-        
-        "assets/css/user-profile.css",
-        
-        
         "assets/css/app.css",
-     
         "assets/css/edit.css",
+<<<<<<< HEAD
         
         
         "styles.css"
@@ -36,6 +30,26 @@
       "scripts": [
 
         "assets/js/bootstrap.min.js"
+=======
+        "assets/css/theme.css",
+        "assets/css/default.css",
+        "assets/css/theme-custom.css",
+        "assets/css/star-rating.css",
+        "assets/css/magnific-popup.css",
+        "assets/css/datatables.css",
+        "assets/css/simple-line-icons/css/simple-line-icons.css",
+        "styles.css",
+        "../node_modules/angular-calendar/css/angular-calendar.css"
+      ],
+      "scripts": [
+        "assets/js/bootstrap.min.js",
+        "assets/js/star-rating.js",
+        "assets/js/magnific-popup.js",
+        "assets/js/jquery.dataTables.js",
+        "assets/js/datatables.js",
+        "assets/js/examples.datatables.editable.js",
+        "assets/js/theme.js"
+>>>>>>> 179632b7d01c2cd5d19f782ea1ca6eb5a18945a6
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
