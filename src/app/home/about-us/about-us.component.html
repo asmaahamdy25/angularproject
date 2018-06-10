@@ -1,0 +1,25 @@
+<section id="about" class="about">
+  <div class="container">
+    <div class="row mt-xlg pt-xlg mb-xlg pb-xs">
+      <div class="col-sm-8 col-md-8">
+        <h2 class="font-weight-semibold mb-xs">Who We Are</h2>
+        <p class="lead font-weight-normal">We are some developers who make a site to help you.</p>
+
+        <p>Dental Zone is a site which make by some intelgent developer to mange dentiall clinic ,
+          and help dentist to mange their paper work in their facilities and also to help patient
+          to find the dentist and choose between them
+        </p>
+        <div id="collapseBasic" [hidden]="isCollapsed" class="card card-block card-header">
+            <p>Dentel zone is the next step for dentiest to mange their clinic and to deal with their patien </p>
+          </div>
+        <button type="button" class="btn btn-primary" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">
+          ReadMore
+        </button>
+
+      </div>
+      <div class="col-sm-4 col-md-4">
+        <img src="assets/images/about.jpg" alt class="img-responsive box-shadow-custom" />
+      </div>
+    </div>
+  </div>
+</section>

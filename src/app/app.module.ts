@@ -29,6 +29,7 @@ import { sharedModule } from './shared/shared.module';
 import { AppoinmentCardService } from './shared/models/Services/appointmentcard-service';
 import { FormsModule } from '@angular/forms';
 import { DemoModule } from './DEMO/module';
+import { CollapseModule } from 'ngx-bootstrap';
 
 >>>>>>> 179632b7d01c2cd5d19f782ea1ca6eb5a18945a6
 @NgModule({
@@ -53,12 +54,14 @@ import { DemoModule } from './DEMO/module';
 =======
     sharedModule,
     AppointmentModule,
+    CollapseModule.forRoot(),
     DemoModule,
 >>>>>>> 179632b7d01c2cd5d19f782ea1ca6eb5a18945a6
     RouterModule.forRoot([
       {
         path: '', component: HomeComponent
       }
+
     ]),
     // RouterModule.forRoot([
     //   { path: 'patient-profile', component: PatientProfileComponent },
