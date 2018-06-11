@@ -21,6 +21,7 @@ import { DemoModule } from './DEMO/module';
 import { AppoinmentCardService } from './shared/models/Services/appointmentcard-service';
 import {FacilitesModule} from './facilites/facilites.module';
 import { ChartsComponent } from './facilites/charts/charts.component';
+import { CollapseModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { ChartsComponent } from './facilites/charts/charts.component';
     CoreModule ,
     sharedModule,
     AppointmentModule,
+    CollapseModule.forRoot(),
     DemoModule,
     FacilitesModule,
 
