@@ -22,7 +22,6 @@
         "assets/css/app.css",
         "assets/css/edit.css",
         "styles.css"
-
       ],
       "scripts": [
         "assets/js/bootstrap.min.js",

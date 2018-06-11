@@ -16,22 +16,12 @@ import { DrugsModule } from './drugs/drugs.module';
 import { PatientAppointmentQueueComponent } from './appointments/patient-appointment-queue/patient-appointment-queue';
 import {SignupComponent} from './core/signup/signup.component';
 import { HomeComponent } from './home/home.component';
-<<<<<<< HEAD
 import { SharedModule } from './shared/shared.module';
-import { appoinmentCardService } from './shared/models/Services/appointmentcard-service';
-// import { TreatmentComponent } from './treatments/treatment/treatment.component';
-// import { AppointmentBookingFormComponent } from './appointments/appointment-booking-form/appointment-booking-form.component';
-// import { MyhomeComponent } from './home/myhome/myhome.component';
-// import { DoctorSearchComponent } from './profiles/patient-profile/doctor-search/doctor-search.component';
-// import { DoctorItemComponent } from './profiles/patient-profile/doctor-item/doctor-item.component';
-=======
-import { sharedModule } from './shared/shared.module';
 import { AppoinmentCardService } from './shared/models/Services/appointmentcard-service';
 import { FormsModule } from '@angular/forms';
 import { DemoModule } from './DEMO/module';
 import { CollapseModule } from 'ngx-bootstrap';
 
->>>>>>> 179632b7d01c2cd5d19f782ea1ca6eb5a18945a6
 @NgModule({
   declarations: [
     AppComponent
@@ -49,14 +39,10 @@ import { CollapseModule } from 'ngx-bootstrap';
     ReviewsModule,
     DrugsModule,
     CoreModule ,
-<<<<<<< HEAD
-    SharedModule ,
-=======
-    sharedModule,
+    SharedModule,
     AppointmentModule,
     CollapseModule.forRoot(),
     DemoModule,
->>>>>>> 179632b7d01c2cd5d19f782ea1ca6eb5a18945a6
     RouterModule.forRoot([
       {
         path: '', component: HomeComponent
@@ -72,11 +58,6 @@ import { CollapseModule } from 'ngx-bootstrap';
 
 
     // ]),
-<<<<<<< HEAD
-    AppointmentModule
-
-=======
->>>>>>> 179632b7d01c2cd5d19f782ea1ca6eb5a18945a6
   ],
   providers: [AppoinmentCardService],
   bootstrap: [AppComponent]
