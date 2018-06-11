@@ -4,13 +4,13 @@ import { HomeComponent } from './home.component';
 import { SliderComponent } from './slider/slider.component';
 import { ContactComponent } from './contact/contact.component';
 import { QuestionsComponent } from './questions/questions.component';
-import { CarouselModule } from 'ngx-bootstrap/carousel';
+//import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 
 @NgModule({
   imports: [
     CommonModule,
-    CarouselModule.forRoot()
+  //  CarouselModule.forRoot()
   ],
   declarations: [
     HomeComponent,

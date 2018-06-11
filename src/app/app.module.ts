@@ -20,6 +20,7 @@ import { FormsModule } from '@angular/forms';
 import { DemoModule } from './DEMO/module';
 import { AppoinmentCardService } from './shared/models/Services/appointmentcard-service';
 import {FacilitesModule} from './facilites/facilites.module';
+import { ChartsComponent } from './facilites/charts/charts.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,9 @@ import {FacilitesModule} from './facilites/facilites.module';
     RouterModule.forRoot([
       {
         path: '', component: HomeComponent
-      }
+      },
+      {path:'chart',component: ChartsComponent
+    }
     ]),
     // RouterModule.forRoot([
     //   { path: 'patient-profile', component: PatientProfileComponent },
