@@ -37,9 +37,11 @@
         "assets/js/star-rating.js",
         "assets/js/magnific-popup.js",
         "assets/js/jquery.dataTables.js",
+        
         "assets/js/datatables.js",
         "assets/js/examples.datatables.editable.js",
         "assets/js/theme.js"
+
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

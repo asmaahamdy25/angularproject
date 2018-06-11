@@ -10,6 +10,8 @@ import { PricesComponent } from './prices/prices.component';
 import { CounterComponent } from './counter/counter.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 
+//import { CarouselModule } from 'ngx-bootstrap/carousel';
+
 
 @NgModule({
   imports: [
@@ -20,12 +22,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
     HomeComponent,
     SliderComponent,
     ContactComponent,
-    QuestionsComponent,
-    IntroductionComponent,
-    PricesComponent,
-    CounterComponent,
-    AboutUsComponent
-],
+    QuestionsComponent
+  ],
   exports: [HomeComponent]
 })
 export class HomeModule { }

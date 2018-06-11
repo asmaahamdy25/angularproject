@@ -6,34 +6,34 @@ import { ProfileModule } from './profiles/profile.module';
 import { TreatmentModule } from './treatments/treatment.module';
 import { AppointmentModule } from './appointments/appointment.module';
 import { HomeModule } from './home/home.module';
-import { FacilityModule } from './facilities/facility.module';
-import {CoreModule} from './core/core.module';
+import { CoreModule } from './core/core.module';
 import { TreatmentComponent } from './treatments/treatment/treatment.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { PatientsModule } from './patient/patients.module';
 import { ReviewsModule } from './reviews/reviews.module';
 import { DrugsModule } from './drugs/drugs.module';
 import { PatientAppointmentQueueComponent } from './appointments/patient-appointment-queue/patient-appointment-queue';
-import {SignupComponent} from './core/signup/signup.component';
+import { SignupComponent } from './core/signup/signup.component';
 import { HomeComponent } from './home/home.component';
 import { SharedModule } from './shared/shared.module';
 import { AppoinmentCardService } from './shared/models/Services/appointmentcard-service';
 import { FormsModule } from '@angular/forms';
 import { DemoModule } from './DEMO/module';
+import { FacilitesModule } from './facilites/facilites.module';
+import { ChartsComponent } from './facilites/charts/charts.component';
 import { CollapseModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent
-    ],
+  ],
 
   imports: [
-     BrowserModule,
+    BrowserModule,
     ProfileModule,
     FormsModule,
     TreatmentModule,
     HomeModule,
-    FacilityModule,
     AppRoutingModule,
     PatientsModule,
     ReviewsModule,
@@ -43,11 +43,15 @@ import { CollapseModule } from 'ngx-bootstrap';
     AppointmentModule,
     CollapseModule.forRoot(),
     DemoModule,
+    FacilitesModule,
+
     RouterModule.forRoot([
       {
         path: '', component: HomeComponent
+      },
+      {
+        path: 'chart', component: ChartsComponent
       }
-
     ]),
     // RouterModule.forRoot([
     //   { path: 'patient-profile', component: PatientProfileComponent },
