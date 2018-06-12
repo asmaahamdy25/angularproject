@@ -22,7 +22,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
     HomeComponent,
     SliderComponent,
     ContactComponent,
-    QuestionsComponent
+    QuestionsComponent,PricesComponent,AboutUsComponent,CounterComponent,IntroductionComponent
   ],
   exports: [HomeComponent]
 })
