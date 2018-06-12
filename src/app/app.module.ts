@@ -15,10 +15,10 @@ import { DrugsModule } from './drugs/drugs.module';
 import { PatientAppointmentQueueComponent } from './appointments/patient-appointment-queue/patient-appointment-queue';
 import { SignupComponent } from './core/signup/signup.component';
 import { HomeComponent } from './home/home.component';
-import { sharedModule } from './shared/shared.module';
+import { SharedModule } from './shared/shared.module';
+import { AppoinmentCardService } from './shared/models/Services/appointmentcard-service';
 import { FormsModule } from '@angular/forms';
 import { DemoModule } from './DEMO/module';
-import { AppoinmentCardService } from './shared/models/Services/appointmentcard-service';
 import { FacilitesModule } from './facilites/facilites.module';
 import { ChartsComponent } from './facilites/charts/charts.component';
 import { CollapseModule } from 'ngx-bootstrap';
@@ -38,8 +38,8 @@ import { CollapseModule } from 'ngx-bootstrap';
     PatientsModule,
     ReviewsModule,
     DrugsModule,
-    CoreModule,
-    sharedModule,
+    CoreModule ,
+    SharedModule,
     AppointmentModule,
     CollapseModule.forRoot(),
     DemoModule,

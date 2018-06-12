@@ -1,41 +1,40 @@
 import {NgModule} from '@angular/core';
-import {  Routes,RouterModule } from '@angular/router';
+import {  Routes, RouterModule } from '@angular/router';
 
-import{CreatePatientComponent}from './create-patient/create-patient.component'
-import{PatientAppointmentQueueComponent}from'./patient-appointment-queue/patient-appointment-queue'
+import {CreatePatientComponent} from './create-patient/create-patient.component';
+import {PatientAppointmentQueueComponent} from './patient-appointment-queue/patient-appointment-queue';
 import { CreateFormComponent } from './create-patient/create-form/create-form.component';
 import { CommonModule } from '@angular/common';
-import { sharedModule } from '../shared/shared.module';
+import { SharedModule } from '../shared/shared.module';
 import { AppointmentCardComponent } from './patient-appointment-queue/appointment-card/appointment-card.component';
 
-const appointmentsRoutes : Routes =[
-{path:'appointments/create-patient',component:CreatePatientComponent}
+const appointmentsRoutes: Routes = [
+{path: 'appointments/create-patient', component: CreatePatientComponent}
 
 ];
 @NgModule({
-    declarations:[
-  
+    declarations: [
+
         CreatePatientComponent,
         CreateFormComponent,
         PatientAppointmentQueueComponent,
         AppointmentCardComponent
-        
-        
+
     ],
-imports:[
-    
+imports: [
+
     CommonModule,
-    
-    sharedModule,
+
+    SharedModule,
     RouterModule.forChild(appointmentsRoutes)
 ]
 ,
-exports:[
- 
+exports: [
+
     RouterModule
     ]
 })
 
-export class appointmentsRoutingModule{
+export class AppointmentsRoutingModule {
 
 }
