@@ -1,3 +1,7 @@
+<div class="container">
+  <div class="row">
+    <h4 class= "text" >Graph Sample</h4>
+  </div>
 <div class="row">
   <div class="col-md-6">
     <div style="display: block;">
@@ -15,12 +19,43 @@
   <div class="col-md-6" style="margin-bottom: 10px">
     <table class="table table-responsive table-condensed">
       <tr>
-        <th *ngFor="let label of lineChartLabels">{{label}}</th>
+        <th class= "text" *ngFor="let label of lineChartLabels">{{label}}</th>
       </tr>
       <tr *ngFor="let d of lineChartData">
-        <td *ngFor="let label of lineChartLabels; let j=index">{{d && d.data[j]}}</td>
+        <td class= "text"  *ngFor="let label of lineChartLabels; let j=index">{{d && d.data[j]}}</td>
       </tr>
     </table>
-    <button (click)="randomize()">CLICK</button>
+    <button class= "text"  (click)="randomize()">Click</button>
+  </div>
+</div>
+<br/><br/>
+<div class="container">
+  <div class="row">
+    <h4 class= "text" >Graph Sample</h4>
+  </div>
+<div class="row">
+  <div class="col-md-6">
+    <div style="display: block;">
+    <canvas baseChart width="400" height="400"
+                [datasets]="lineChartData"
+                [labels]="lineChartLabels"
+                [options]="lineChartOptions"
+                [colors]="lineChartColors"
+                [legend]="lineChartLegend"
+                [chartType]="lineChartType"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
+    </div>
+  </div>
+  <div class="col-md-6" style="margin-bottom: 10px">
+    <table class="table table-responsive table-condensed">
+      <tr>
+        <th class= "text" *ngFor="let label of lineChartLabels">{{label}}</th>
+      </tr>
+      <tr *ngFor="let d of lineChartData">
+        <td class= "text"  *ngFor="let label of lineChartLabels; let j=index">{{d && d.data[j]}}</td>
+      </tr>
+    </table>
+    <button class= "text"  (click)="randomize()">Click</button>
   </div>
 </div>

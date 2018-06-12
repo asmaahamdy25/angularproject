@@ -1,13 +1,13 @@
 <!-- Start package component -->
-
+<div class="container">
 <div id="packages" class="row">
-    <div class="package" *ngFor="let pack of packages">
+    <div class="package col-md-6" *ngFor="let pack of packages">
         <div class="package-head text-center">
             <p>{{ pack.packageName }}</p>
             <i class="{{pack.icon}}" aria-hidden="true"></i>
             <p>${{pack.price}}/month</p>
         </div>
-        <div class="package-body">
+        <div class="package-body col-md-6">
             <p class="text-center"># features</p>
             <ul class="list-group text-center">
                 <li class="list-group-item" *ngFor="let packf of pack.features">{{packf}}</li>
@@ -23,5 +23,6 @@
 
 <!-- End package component -->
   
+</div>
 </div>
 <!-- End package component -->
