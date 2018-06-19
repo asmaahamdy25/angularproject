@@ -7,6 +7,7 @@ import { CreateFormComponent } from './create-patient/create-form/create-form.co
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
 import { AppointmentCardComponent } from './patient-appointment-queue/appointment-card/appointment-card.component';
+import { AppointmentBookingFormComponent } from './appointment-booking-form/appointment-booking-form.component';
 
 const appointmentsRoutes: Routes = [
 {path: 'appointments/create-patient', component: CreatePatientComponent}
@@ -18,7 +19,8 @@ const appointmentsRoutes: Routes = [
         CreatePatientComponent,
         CreateFormComponent,
         PatientAppointmentQueueComponent,
-        AppointmentCardComponent
+        AppointmentCardComponent,
+        AppointmentBookingFormComponent
 
     ],
 imports: [

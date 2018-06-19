@@ -1,8 +1,4 @@
 <div class="patient-cards col-md-10 col-lg-10">
-  <app-patient-card></app-patient-card>
-  <app-patient-card></app-patient-card>
-  <app-patient-card></app-patient-card>
-  <app-patient-card></app-patient-card>
-  <app-patient-card></app-patient-card>
-  <app-patient-card></app-patient-card>  
+  <app-patient-card *ngFor="let den of dentists" [dentist]="den"></app-patient-card>
+ 
 </div>

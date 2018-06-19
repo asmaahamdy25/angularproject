@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { IDentistList } from '../../shared/models/interfaces/IDentistList';
+import { DentistService } from '../../shared/models/Services/dentist.service';
 
 @Component({
   selector: 'app-patient-card',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PatientCardComponent implements OnInit {
 
-  constructor() { }
+  @Input() dentist: IDentistList;
+  constructor() {
+  }
 
   ngOnInit() {
+    console.log(this.dentist);
   }
 
 }

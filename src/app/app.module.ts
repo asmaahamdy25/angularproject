@@ -22,6 +22,7 @@ import { DemoModule } from './DEMO/module';
 import { FacilitesModule } from './facilites/facilites.module';
 import { ChartsComponent } from './facilites/charts/charts.component';
 import { CollapseModule } from 'ngx-bootstrap';
+import { DentistService } from './shared/models/Services/dentist.service';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,7 @@ import { CollapseModule } from 'ngx-bootstrap';
 
     // ]),
   ],
-  providers: [AppoinmentCardService],
+  providers: [AppoinmentCardService, DentistService],
   bootstrap: [AppComponent]
 })
 

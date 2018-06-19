@@ -7,8 +7,7 @@ import { DemoComponent } from './DEMO/component';
 import { ChartsComponent } from './facilites/charts/charts.component';
 import { ContactComponent } from './home/contact/contact.component';
 import { QuestionsComponent } from './home/questions/questions.component';
-
-
+import { PatientCardListComponent } from './patient/patient-card-list/patient-card-list.component';
 
 /*should be Home Module*/
 const routes: Routes = [
@@ -17,7 +16,8 @@ const routes: Routes = [
   {path: 'demo', component: DemoComponent},
   {path: 'charts', component: ChartsComponent},
   {path: 'contact', component: ContactComponent},
-  {path: 'questions', component: QuestionsComponent}
+  {path: 'questions', component: QuestionsComponent},
+  {path: 'DentistList', component: PatientCardListComponent}
 ];
 
 @NgModule({

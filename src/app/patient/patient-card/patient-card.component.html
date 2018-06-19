@@ -12,27 +12,27 @@
               <img src="../../../../../../assets/images/patient/patient_1.png" alt="">
             </div>
             <div class="profile-account">
-              <h3 class="name text-semibold">Rawaa</h3>
+              <h3 class="name text-semibold">{{dentist.dentistName}}</h3>
               <a href="#" class="account">
-                <i class="fa fa-envelope"></i>Rawaa.aladdin@gmail.con</a>
+                <i class="fa fa-envelope"></i>{{dentist.dentistEmail}}</a>
             </div>
             <ul class="profile-stats">
               <li>
                 <h5 class="stat text-uppercase">Age</h5>
-                <h4 class="count">24</h4>
+                <h4 class="count">{{dentist.dentistAge}}</h4>
               </li>
               <li>
                 <h5 class="stat text-uppercase">Gender</h5>
 
                 <h4 class="count">
-                  Female
+                  {{dentist.dentistGender}}
                 </h4>
 
               </li>
               <li>
                 <h5 class="stat text-uppercase">Payement</h5>
                 <h4 class="count">
-                  <i class="fa fa-check-circle"></i> Done</h4>
+                  <i class="fa fa-check-circle"></i> {{dentist.dentistPayment}}</h4>
 
               </li>
 
@@ -42,17 +42,17 @@
             <blockquote>
               <p>
                 Appointment Date:
-                <span class="datetime">14-10-2016</span>
+                <span class="datetime">{{dentist.appointmentDate}}</span>
 
               </p>
 
             </blockquote>
 
             <p>
-              <i class="fa fa-location-arrow"></i> Address: 6th of october
+              <i class="fa fa-location-arrow"></i> Address: {{dentist.dentisAddress}}
             </p>
             <p>
-              <i class="fa fa-mobile-phone"></i> Phone Number: 01069664721
+              <i class="fa fa-mobile-phone"></i> Phone Number: {{dentist.dentisPhone}}
             </p>
             <div class="quote-footer">
 

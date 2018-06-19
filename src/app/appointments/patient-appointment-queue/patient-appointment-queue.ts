@@ -13,7 +13,7 @@ import { AppoinmentCardService } from '../../shared/models/Services/appointmentc
 })
 export class PatientAppointmentQueueComponent implements OnInit {
 
- 
+
   public appointmentcards: IAppointment[];
   constructor(private appoinmentCardService: AppoinmentCardService) {
 
